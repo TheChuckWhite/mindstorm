@@ -60,3 +60,12 @@ div#footbar{
 	height: 20px;
 	background: #FFF;
 }
+
+.fixed{
+	position:fixed;
+	top:0;
+}
+
+.marg{
+	margin-bottom:70px;
+}
