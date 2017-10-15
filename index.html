@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" /> 
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -17,9 +19,19 @@
 	<header id="header">
 		<div></div>
 	</header>
-	<nav id="navi">
-		
-	</nav>
+	<div id="navWrap">
+		<nav>
+			<div id="navImg">fadelogo</div>
+			<ul>	
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Courses</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Events</a></li>
+				<li><a href="">News</a></li>
+			</ul>
+		</nav>
+	</div>
 	<div class="wrapper">
 		<div id="content">
 			<article>
@@ -43,10 +55,10 @@
 	<script type="text/javascript">
 		$(window).bind('scroll', function () {
 		    if ($(window).scrollTop() >= 75) {
-		        $('#navi').addClass('fixed');
+		        $('#navWrap').addClass('fixed');
 		        $('#header').addClass('marg');
 		    } else {
-		        $('#navi').removeClass('fixed');
+		        $('#navWrap').removeClass('fixed');
 		        $('#header').removeClass('marg');
 		    }
 		});
