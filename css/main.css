@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Sacramento|Satisfy');
-*{
-	margin: 0px;
-	padding: 0px;
-}
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
 
 body{
 	background: url(../img/background.jpg) no-repeat center center fixed;
@@ -40,8 +36,6 @@ header div#nameCursive{
 
 header div#nameCursive p{
 	font-size: 20px;
-    font-family: 'Sacramento', cursive;
-    font-family: 'Dancing Script', cursive;
     font-family: 'Satisfy', cursive;
 }
 
