@@ -14,6 +14,13 @@ header{
 	background: #FFF;
 }
 
+div#headWrap{
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 5px 20px;
+}
+
 div#navWrap{
 	width: 100%;
 	height: 50px;
@@ -24,6 +31,7 @@ nav{
 	width: 1000px;
 	height: 100%;
 	margin: 0 auto;
+	padding-left: 20px;
 }
 
 nav > ul{
@@ -81,12 +89,35 @@ aside{
 	height: 500px;
 	margin-top:20px;
 	float: right;
-	background: #FFF;
+}
+
+aside > div{
+	background-color: #FFF;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px
+}
+
+aside > div > div{
+	height: 50px;
+	width: calc(100% / 3);
+	text-align: center;
+	float: left;
+}
+
+#social{
+	overflow: auto;
+	padding: 20px 0px;
+}
+
+aside > div > div > img{
+	height: 100%;
 }
 
 article{
 	width:100%;
 	height: 300px;
+	padding: 20px;
 	margin-top:20px;
 	background: #FFF;
 }
@@ -103,11 +134,23 @@ div#footbar{
 	background: #FFF;
 }
 
-.fixed{
-	position:fixed;
-	top:0;
+div.footWrap{
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
 }
 
-.marg{
-	margin-bottom:70px;
+div.footBox{
+	width: 33%;
+	height: 100%;
+	padding: 20px;
+	float: left;
+
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+}
+
+h3{
+	font-size: 20px;
+	margin-bottom: 10px;
 }
