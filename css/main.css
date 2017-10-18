@@ -12,7 +12,7 @@ header{
 	background: #FFF;
 }
 
-header div#logo{
+div#logo{
 	height: 75px;
 	width: 75px;
 	float:left;
@@ -21,7 +21,8 @@ header div#logo{
 header div#name{
 	padding-top: 5px;
 	height: 40px;
-	width: 400px;
+	width: 600px;
+	float: left;
 }
 
 header div#name h1{
@@ -32,6 +33,7 @@ header div#name h1{
 header div#nameCursive{
 	height: 35px;
 	width: 400px;
+	float: left;
 }
 
 header div#nameCursive p{
@@ -44,6 +46,11 @@ div#headWrap{
 	margin: 0 auto;
 	height: 100%;
 	padding: 5px 20px;
+}
+
+#flag{
+	height: 20px;
+	float: right;
 }
 
 div#navWrap{
@@ -173,6 +180,15 @@ div.footBox{
 
 	color: #FFF;
 	font-family: 'Roboto', sans-serif;
+}
+
+div#footbar{
+	font-family: 'Roboto', sans-serif;
+}
+
+span#copy{
+	display: block;
+	float: right;
 }
 
 h3{
