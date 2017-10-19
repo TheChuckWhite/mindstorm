@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lora');
 body{
-	font-family: 'Lora', serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 nav{
@@ -58,5 +57,5 @@ aside div div.newsitem_sidebar h3{
 	margin-bottom: 0;
 }
 aside div div.newsitem_sidebar p{
-	font-size:;
+	font-size: 14px;
 }
