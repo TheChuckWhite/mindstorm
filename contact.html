@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Da Vinci University</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="./contact.css">
+
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div id="headWrap">
+			<div id='logo'><img src="img/logo.png" height="60"></div>
+			<div id='name'><h1>Da Vinci University</h1></div>
+			<div id='nameCursive'><p>Learning never exhausts the mind</p></div>
+		</div>
+	</header>
+	<div id="navWrap">
+		<nav>
+			<ul>	
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Courses</a></li>
+				<li><a href="">Events</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">Contact</a></li>
+
+			</ul>
+		</nav>
+	</div>
+	<div class="wrapper">
+		<div id="content">
+			<article>
+				<div class="contact">Have any questions?</div>
+				<div class="contents">We answer as many questions as we can on our website. If you have any questions that you feel are not answered on our website, feel free to contact us! You can send us your questions by sending an e-mail to internationaloffice@davinciuniversity.nl or by completing the form below.
+				</div>
+				<div class="form">
+                            <?php
+                            $text = $_POST['text'];
+                            if (isset($_POST['submit']))
+                            {
+                                if (!empty($text))
+                                {
+                                    echo '<font color="red">*Thank you for the feedback!</font>';
+                                } else
+                                {
+                                    echo '<font color="red">*Complete all the empty fields!</font>';
+                                }
+                            }
+                            ?>
+                            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
+                                <p>
+                                    <label>Name</label>
+                                    <textarea placeholder="Name" name="text"></textarea>
+                                </p>
+                                <p>
+                                    <label>E-mail</label>
+                                    <textarea placeholder="E-mail" name="text"></textarea>
+                                </p>
+                                <p>
+                                    <label>Questions</label>
+                                    <textarea placeholder="Questions" name="text" id="comment"></textarea>
+                                </p>
+                                <p>
+                                    <input type="submit" value="Submit" name="submit"> 
+                                </p>
+                            </form> 
+
+                        </div>
+			</article>
+
+			<article>
+				<div class="contact">Opening hours</div>
+				<div class="contents">	
+					<div id="days">
+						<ul>
+							<li>Monday</li>
+							<li>Tuesday</li>
+							<li>Wednesday</li>
+							<li>Thursday</li>
+							<li>Friday</li>
+						</ul>
+					</div>
+					<div id="hours">
+						<ul>
+							<li>8:00 - 18:30 </li>
+							<li>8:00 - 18:30 </li>
+							<li>8:00 - 18:30 </li>
+							<li>8:00 - 19:30 </li>
+							<li>8:00 - 16:30 </li>
+						</ul>
+					</div>
+				</div>
+				<div class="contents">
+					During weekends and public holidays Da Vinci University is closed.
+				</div>
+				<div id="blank"></div>
+				<div class="contact"> Contact details </div>
+				<div class="contents">
+					<ul>
+						<li>Telephone number: +31 (0)88 019 3789 </li>
+						<li>E-mail address: internationaloffice@davinciuniversity.nl </li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<div class="contact">Student Service Desk</div>
+				<div class="contents">	For general information about studying at Da Vinci University, please contact the Student Service Desk, which is located at the Roeterseiland Campus in Emmen. The desk is open Monday to Friday from 09:00 to 17:00.
+				</div>
+
+			</article>
+		</div>
+		<aside>
+			<div>
+				Newsfeed
+			</div>
+			<div>
+				Weather
+			</div>
+			<div id="social">
+				<div>
+					<img src="img/facebook.png" alt="facebook">
+				</div>
+				<div>
+					<img src="img/twitter.png" alt="twitter">
+				</div>
+				<div>
+					<img src="img/youtube.png" alt="youtube">
+				</div>				
+			</div>
+		</aside>
+	</div>
+	<footer>
+		<div class="footWrap">
+			<div class="footBox">
+				<h3>Locations</h3>
+				<ul>
+					<li>Emmen</li>
+					<li>Groningen</li>
+
+				</ul>
+			</div>
+			<div class="footBox">
+				<h3>Da Vinci University</h3>
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Courses</li>
+					<li>Events</li>
+					<li>News</li>
+					<li>Contact</li>
+
+				</ul>
+			</div>
+			<div class="footBox">
+				<h3>Open Day Registration</h3>
+			</div>
+		</div>
+	</footer>
+	<div id="footbar">
+		<div class="footWrap">
+			<span>Da Vinci University</span>
+		</div>
+			
+	</div>
+</body>
+</html>
