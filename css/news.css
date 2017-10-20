@@ -1,0 +1,51 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+div#content article{
+	height: auto;
+}
+div#content article div{
+	height: 30px;
+
+	}
+div#content article h1{
+	font-size: 25px;
+	color: #FF6600;
+	float: left;
+}
+div#content article span{
+	float: right;
+	color: #929292;
+}
+
+div#content article p{
+	margin-top: 5px;
+}
+
+aside{
+	height: auto;
+}
+aside div {
+	float: left;
+}
+aside div div.newsitem_sidebar{
+	min-height: 60px;
+	height: auto;
+	width: 100%;
+	text-align: left;
+	float: left;
+	margin-bottom: 10px;
+}
+aside div div.newsitem_sidebar:last-child{
+	margin-bottom: 0;
+}
+aside div div.newsitem_sidebar h3{
+	color: #ff6600;
+	font-size: 18px;
+	margin-bottom: 0;
+}
+aside div div.newsitem_sidebar p{
+	font-size: 14px;
+}
