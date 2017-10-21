@@ -259,10 +259,9 @@ div.overlay{
 	transition: 0.5s;
 }
 div.overlay p{
-position: relative;
-top: 50%;
-transform: translateY(-50%);
-
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .overlay:hover{

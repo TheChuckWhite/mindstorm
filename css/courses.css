@@ -5,21 +5,20 @@
 #electricalEngineering{
 	height: 200px;
 	width: 625px;
-	background-image: url(../img/electricalEngineering.jpg);
+	background-image: url(../img/ele.gif);
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	margin: 10px auto;
 }
-.bannerBackground{
-	height: 200px;
-	width: 625px;
-	background-color: rgba(209, 58, 41, .6);
-	transition: background-color 0.5s;
-}
-.bannerBackground:hover{
-	background-color: rgba(209, 58, 41, .3);
+
+.overlay p{
+	transition: opacity 2s;
 }
 
+.overlay:hover p{
+	opacity: 0;
+}
 
 article > h3{
 	margin-top: 15px;
