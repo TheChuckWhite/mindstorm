@@ -8,21 +8,23 @@
 	background-image: url(../img/electricalEngineering.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: auto;
+	margin: 10px auto;
 }
-#ex{
+.bannerBackground{
 	height: 200px;
 	width: 625px;
-	background-color: rgba(209, 58, 41, .8);
+	background-color: rgba(209, 58, 41, .6);
 	transition: background-color 0.5s;
 }
-#ex:hover{
-	background-color: rgba(209, 58, 41, .5);
+.bannerBackground:hover{
+	background-color: rgba(209, 58, 41, .3);
 }
 
-#electricalEngineering h2{
-	color: white;
-	text-align: center;
-	line-height: 200px; 
+
+article > h3{
+	margin-top: 15px;
 }
+
+
+
 
