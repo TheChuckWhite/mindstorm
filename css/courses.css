@@ -5,13 +5,21 @@
 #electricalEngineering{
 	height: 200px;
 	width: 625px;
-	background-image: url(../img/ele.gif);
+	background-image: url(../img/ele2.gif);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	margin: 10px auto;
 }
-
+#informationTechnology{
+	height: 200px;
+	width: 625px;
+	background-image: url(../img/it.gif);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 10px auto;
+}
 .overlay p{
 	transition: opacity 2s;
 }
@@ -20,8 +28,8 @@
 	opacity: 0;
 }
 
-article > h3{
-	margin-top: 15px;
+article > h2{
+	margin-top: 30px;
 }
 
 
