@@ -1,0 +1,16 @@
+@import url('./reset.css');
+@import url('./main.css');
+
+
+#electricalEngineering{
+	height: 200px;
+	width: 600px;
+	background: url(../img/electronicMusic.jpg);
+	margin: auto;
+}
+
+#electricalEngineering h2{
+	color: white;
+	text-align: center;
+	line-height: 200px;
+}
