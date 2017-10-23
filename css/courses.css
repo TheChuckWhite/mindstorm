@@ -19,6 +19,15 @@ div.overlayNoTransition p{
 	top: 50%;
 	transform: translateY(-50%);
 }
+#apply{
+	height: 200px;
+	width: 625px;
+	background-image: url(../img/form.gif);
+	background-position: 0 -70px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 10px auto;
+}
 #general{
 	height: 200px;
 	width: 625px;
