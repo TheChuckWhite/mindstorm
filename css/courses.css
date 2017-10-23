@@ -1,7 +1,9 @@
 @import url('./reset.css');
 @import url('./main.css');
 
-
+b{
+	font-weight: bold;
+}
 #electricalEngineering{
 	height: 200px;
 	width: 625px;
@@ -21,11 +23,11 @@
 	margin: 10px auto;
 }
 .overlay p{
-	transition: opacity 2s;
+	transition: opacity 1.5s;
 }
 
 .overlay:hover p{
-	opacity: 0;
+	opacity: .3;
 }
 
 article > h2{
