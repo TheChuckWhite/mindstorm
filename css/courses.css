@@ -36,27 +36,27 @@ div.overlayNoTransition p{
 }
 
 #electronicMusic{
-	background-image: url(../img/ed.gif);
+	background-image: url(../img/electronicMusic.gif);
 }
 
 #classicalInstruments{
-	background-image: url(../img/class.gif);
+	background-image: url(../img/classicalInstruments.gif);
 }
 
 #apply{
-	background-image: url(../img/form.gif);
+	background-image: url(../img/apply.gif);
 }
 
 #general{
-	background-image: url(../img/gen.gif);
+	background-image: url(../img/generalRequirements.gif);
 }
 
 #electricalEngineering{
-	background-image: url(../img/ele2.gif);
+	background-image: url(../img/electricalEngineering.gif);
 }
 
 #informationTechnology{
-	background-image: url(../img/it.gif);
+	background-image: url(../img/informationTechnology.gif);
 }
 
 
