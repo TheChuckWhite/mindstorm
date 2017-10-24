@@ -29,19 +29,19 @@ include_once("php/news.php");
 			</div>
 
 			<div id="flag">
-				<a href="newsit.html.php"><img src="img/it_flag.png" alt="italian flag"></a>
+				<a href="news.html.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
 			</div>
 		</div>
 	</header>
 	<div id="navWrap">
 		<nav>
 			<ul>	
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="courses.html">Courses</a></li>
-				<li><a href="events.html">Events</a></li>
-				<li><a href="news.html.php">News</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="indexit.html">Home</a></li>
+				<li><a href="aboutit.html">About</a></li>
+				<li><a href="coursesit.html">Courses</a></li>
+				<li><a href="eventsit.html">Events</a></li>
+				<li><a href="newsit.html.php">News</a></li>
+				<li><a href="contactit.html">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -103,12 +103,12 @@ include_once("php/news.php");
 			<div class="footBox">
 				<h3>Da Vinci University</h3>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="courses.html">Courses</a></li>
-					<li><a href="events.html">Events</a></li>
-					<li><a href="news.html.php">News</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="indexit.html">Home</a></li>
+					<li><a href="aboutit.html">About</a></li>
+					<li><a href="coursesit.html">Courses</a></li>
+					<li><a href="eventsit.html">Events</a></li>
+					<li><a href="newsit.html.php">News</a></li>
+					<li><a href="contactit.html">Contact</a></li>
 				</ul>
 			</div>
 			<div class="footBox">
