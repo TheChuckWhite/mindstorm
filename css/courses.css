@@ -6,8 +6,22 @@ b{
 }
 
 article > h2{
-	margin-top: 15px;
+	margin-top: 20px;
 }
+
+article ul{
+	line-height: 1.3em;
+	font-family: 'Roboto', sans-serif;
+	padding:0 10px 0px 0;
+}
+
+article ul li{
+	line-height: 1.3em;
+	font-family: 'Roboto', sans-serif;
+	padding:10px 0px;
+
+}
+
 
 .banner{
 	height: 200px;
