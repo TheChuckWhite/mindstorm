@@ -267,3 +267,13 @@ div.overlay p{
 .overlay:hover{
 	background:rgba(255,255,255,0);
 }
+
+a:link{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited{
+	text-decoration: none;
+	color: inherit;
+}
