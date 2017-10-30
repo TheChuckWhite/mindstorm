@@ -110,6 +110,10 @@ nav > ul > li > a{
 	color: inherit;
 	text-decoration: none;
 }
+nav > ul > li#active{
+	background: #FFF;
+	color: #F70;
+}
 
 div#navImg{
 	width: 50px;
@@ -168,6 +172,35 @@ article{
 	margin-top:20px;
 	background: #FFF;
 }
+/*STUFF KARIN ADDED FOR THE SIDEBAR*/
+aside{
+	height: auto;
+	font-family: 'Roboto', serif;;
+}
+aside div {
+	float: left;
+}
+aside div div.newsitem_sidebar{
+	min-height: 60px;
+	height: auto;
+	width: 100%;
+	text-align: left;
+	float: left;
+	margin-bottom: 10px;
+}
+aside div div.newsitem_sidebar:last-child{
+	margin-bottom: 0;
+}
+aside div div.newsitem_sidebar h3{
+	color: #ff6600;
+	font-size: 18px;
+	margin-bottom: 0;
+}
+aside div div.newsitem_sidebar p{
+	font-size: 14px;
+	margin-top: 5px;
+}
+/*END STUFF KARIN ADDED*/
 
 article p{
 	line-height: 1.3em;

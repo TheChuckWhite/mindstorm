@@ -14,14 +14,16 @@ div#content article h1{
 	font-size: 25px;
 	color: #FF6600;
 	float: left;
+	width: 100%;
 }
 div#content article span{
-	float: right;
+	float: left;
 	color: #929292;
+	margin-top: 5px;
 }
 
 div#content article p{
-	margin-top: 5px;
+	margin-top: 20px;
 }
 
 aside{
@@ -48,4 +50,5 @@ aside div div.newsitem_sidebar h3{
 }
 aside div div.newsitem_sidebar p{
 	font-size: 14px;
+	margin-top: 5px;
 }
