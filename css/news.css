@@ -1,7 +1,3 @@
-body{
-	font-family: 'Roboto', sans-serif;
-}
-
 
 div#content article{
 	height: auto;
@@ -10,20 +6,14 @@ div#content article div{
 	height: 30px;
 
 	}
-div#content article h1{
-	font-size: 25px;
-	color: #FF6600;
-	float: left;
-	width: 100%;
+div#content article h2{
+	margin-bottom: 10px;
 }
 div#content article span{
 	float: left;
 	color: #929292;
-	margin-top: 5px;
-}
-
-div#content article p{
-	margin-top: 20px;
+	width: 100%;
+	margin-bottom: 25px;
 }
 
 aside{
