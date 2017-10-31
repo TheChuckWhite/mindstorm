@@ -17,6 +17,9 @@ label
     display:block;
     margin-top:20px;
     letter-spacing:2px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 90px;
 }
 textarea 
 {
@@ -28,6 +31,8 @@ textarea
 	margin-top:3px;
 	font-size:0.9em;
 	color:#3a3a3a;
+	resize: none;
+	
 	
 }
 input
