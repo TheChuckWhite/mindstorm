@@ -100,7 +100,7 @@ li
 			</div>
 
 			<div id="flag">
-				<img src="img/it_flag.png" alt="italian flag">
+                <a href="contact.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
 			</div>
 		</div>
 	</header>
