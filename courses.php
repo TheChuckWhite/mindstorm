@@ -1,3 +1,8 @@
+<?php
+define("IN_PAGE", true);
+$lang = "en";
+$news = include"newsfeed/newsReader.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,17 +26,17 @@
 			</div>
 
 			<div id="flag">
-				<a href="coursesit.html"><img src="img/it_flag.png" alt="italian flag"></a>
+				<a href="coursesit.php"><img src="img/it_flag.png" alt="italian flag"></a>
 			</div>
 		</div>
 	</header>
 	<div id="navWrap">
 		<nav>
 			<ul>	
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li id="active"><a href="courses.html">Courses</a></li>
-				<li><a href="events.html">Events</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li id="active"><a href="courses.php">Courses</a></li>
+				<li><a href="events.php">Events</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="contact.php">Contact</a></li>
 			</ul>
@@ -249,10 +254,10 @@
 			<div class="footBox">
 				<h3>Da Vinci University</h3>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="courses.html">Courses</a></li>
-					<li><a href="events.html">Events</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="about.php">About</a></li>
+					<li><a href="courses.php">Courses</a></li>
+					<li><a href="events.php">Events</a></li>
 					<li><a href="news.php">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>

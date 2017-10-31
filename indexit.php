@@ -1,3 +1,8 @@
+<?php
+define("IN_PAGE", true);
+$lang = "it";
+$news = include "newsfeed/newsReader.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,10 +35,10 @@
 	<div id="navWrap">
 		<nav>
 			<ul>	
-				<li id="active"><a href="indexit.html">Home</a></li>
-				<li><a href="aboutit.html">Su di noi</a></li>
-				<li><a href="coursesit.html">Corsi</a></li>
-				<li><a href="eventsit.html">Eventi</a></li>
+				<li id="active"><a href="indexit.php">Home</a></li>
+				<li><a href="aboutit.php">Su di noi</a></li>
+				<li><a href="coursesit.php">Corsi</a></li>
+				<li><a href="eventsit.php">Eventi</a></li>
 				<li><a href="newsit.php">Novità</a></li>
 				<li><a href="contactit.php">Contatti</a></li>
 			</ul>
@@ -56,7 +61,7 @@
 					</a>
 				</div>
 				<div class="indexbox" id="coursebox">
-					<a href="coursesit.html">
+					<a href="coursesit.php">
 						<div class="overlay">
 							<p>Corsi</p>
 						</div>
@@ -75,20 +80,17 @@
 			</article>
 		</div>
 		<aside>
-			<div>
-				<div class="newsitem_sidebar">
-					<h3>DU received qualification</h3>
-					<p class="desc">In 2017 DaVinci University received the top qualification in the HBO Selection Guide.</p>
-				</div>
-				<div class="newsitem_sidebar">
-					<h3>Jump-start your job search</h3>
-					<p class="desc">In DaVinci University’s series “Jump-start Your Job Search,” DaVinci University brings you short interviews with companies linked to your education.</p>
-				</div>
-				<div class="newsitem_sidebar">
-					<h3>DU student won the Luthier price</h3>
-					<p class="desc">8349 people joined this year's race against the clock to make the perfect stringed instrument in 1 week, working on their instrument 5 hours a day</p>
-				</div>
-			</div>
+            <div>
+                <?php foreach($news as $newsItem){ ?>
+                    <div class="newsitem_sidebar">
+                        <h3><a href="news.php"><?= substr($newsItem->title, 0, 40) ?>...</a></h3>
+                        <p class="desc">
+                            <?= substr($newsItem->description, 0, 100) ?>...
+                        </p>
+                    </div>
+                <?php } ?>
+                <a href="newsfeed/newsReader.php?lang=<?= $lang ?>" target="_blank"><img src="img/rss.png" alt="rss"></a>
+            </div>
 			<div>
 				Previsioni
 			</div>
@@ -118,10 +120,10 @@
 			<div class="footBox">
 				<h3>Da Vinci University</h3>
 				<ul>	
-					<li><a href="indexit.html">Home</a></li>
-					<li><a href="aboutit.html">Su di noi</a></li>
-					<li><a href="coursesit.html">Corsi</a></li>
-					<li><a href="eventsit.html">Eventi</a></li>
+					<li><a href="indexit.php">Home</a></li>
+					<li><a href="aboutit.php">Su di noi</a></li>
+					<li><a href="coursesit.php">Corsi</a></li>
+					<li><a href="eventsit.php">Eventi</a></li>
 					<li><a href="newsit.php">Novità</a></li>
 					<li><a href="contactit.html">Contatti</a></li>
 				</ul>

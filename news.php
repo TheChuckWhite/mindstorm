@@ -15,9 +15,6 @@ $news = include"newsfeed/newsReader.php"; ?>
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 </head>
 <body>
 	<header>
@@ -36,10 +33,10 @@ $news = include"newsfeed/newsReader.php"; ?>
 	<div id="navWrap">
 		<nav>
 			<ul>	
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="courses.html">Courses</a></li>
-				<li><a href="events.html">Events</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="courses.php">Courses</a></li>
+				<li><a href="events.php">Events</a></li>
 				<li id="active"><a href="news.php">News</a></li>
 				<li><a href="contact.php">Contact</a></li>
 			</ul>
@@ -101,10 +98,10 @@ $news = include"newsfeed/newsReader.php"; ?>
 			<div class="footBox">
 				<h3>Da Vinci University</h3>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="courses.html">Courses</a></li>
-					<li><a href="events.html">Events</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="about.php">About</a></li>
+					<li><a href="courses.php">Courses</a></li>
+					<li><a href="events.php">Events</a></li>
 					<li><a href="news.php">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>

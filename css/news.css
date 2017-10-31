@@ -22,7 +22,7 @@ aside{
 aside div {
 	float: left;
 }
-aside div img {
+aside div a img {
 	float: right;
 }
 aside div div.newsitem_sidebar{

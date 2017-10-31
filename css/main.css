@@ -180,6 +180,9 @@ aside{
 aside div {
 	float: left;
 }
+aside div a img {
+	float: right;
+}
 aside div div.newsitem_sidebar{
 	min-height: 60px;
 	height: auto;
@@ -198,7 +201,7 @@ aside div div.newsitem_sidebar h3{
 }
 aside div div.newsitem_sidebar p{
 	font-size: 14px;
-	margin: 20px 0 10px 0;
+	margin-top: 5px;
 }
 /*END STUFF KARIN ADDED*/
 

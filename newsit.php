@@ -1,8 +1,8 @@
 <?php
 define("IN_PAGE", true);
 $lang = "it";
-$news = include "newsfeed/newsReader.php"; ?>
-
+$news = include "newsfeed/newsReader.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,9 +16,6 @@ $news = include "newsfeed/newsReader.php"; ?>
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 </head>
 <body>
 	<header>
@@ -37,10 +34,10 @@ $news = include "newsfeed/newsReader.php"; ?>
 	<div id="navWrap">
 		<nav>
 			<ul>
-				<li><a href="indexit.html">Home</a></li>
-				<li><a href="aboutit.html">Su di noi</a></li>
-				<li><a href="coursesit.html">Corsi</a></li>
-				<li><a href="eventsit.html">Eventi</a></li>
+				<li><a href="indexit.php">Home</a></li>
+				<li><a href="aboutit.php">Su di noi</a></li>
+				<li><a href="coursesit.php">Corsi</a></li>
+				<li><a href="eventsit.php">Eventi</a></li>
 				<li id="active"><a href="newsit.php">Novità</a></li>
 				<li><a href="contactit.php">Contatti</a></li>
 			</ul>
@@ -49,7 +46,6 @@ $news = include "newsfeed/newsReader.php"; ?>
 	<div class="wrapper">
 
         <div id="content">
-
             <?php foreach($news as $newsItem){ ?>
                 <article>
                     <h2><?= $newsItem->title ?></h2>
@@ -59,7 +55,6 @@ $news = include "newsfeed/newsReader.php"; ?>
                     </p>
                 </article>
             <?php } ?>
-
         </div>
 
 		<aside>
@@ -72,7 +67,7 @@ $news = include "newsfeed/newsReader.php"; ?>
                         </p>
                     </div>
                 <?php } ?>
-                <a href="newsfeed/newsReader.php?lang=<?= $lang ?>" target="_blank">RSSICON</a>
+                <a href="newsfeed/newsReader.php?lang=<?= $lang ?>" target="_blank"><img src="img/rss.png" alt="rss"></a>
             </div>
 			<div>
 				Weather
@@ -103,10 +98,10 @@ $news = include "newsfeed/newsReader.php"; ?>
 			<div class="footBox">
 				<h3>Da Vinci University</h3>
 				<ul>
-					<li><a href="indexit.html">Home</a></li>
-					<li><a href="aboutit.html">About</a></li>
-					<li><a href="coursesit.html">Courses</a></li>
-					<li><a href="eventsit.html">Events</a></li>
+					<li><a href="indexit.php">Home</a></li>
+					<li><a href="aboutit.php">About</a></li>
+					<li><a href="coursesit.php">Courses</a></li>
+					<li><a href="eventsit.php">Events</a></li>
 					<li><a href="newsit.php">News</a></li>
 					<li><a href="contactit.html">Contact</a></li>
 				</ul>

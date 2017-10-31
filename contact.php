@@ -1,3 +1,8 @@
+<?php
+define("IN_PAGE", true);
+$lang = "en";
+$news = include"newsfeed/newsReader.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -107,10 +112,10 @@ li
 	<div id="navWrap">
 		<nav>
 			<ul>	
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="courses.html">Courses</a></li>
-				<li><a href="events.html">Events</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="courses.php">Courses</a></li>
+				<li><a href="events.php">Events</a></li>
 				<li><a href="news.php">News</a></li>
 				<li id="active"><a href="contact.php">Contact</a></li>
 
@@ -205,9 +210,17 @@ li
 			</article>
 		</div>
 		<aside>
-			<div>
-				Newsfeed
-			</div>
+            <div>
+                <?php foreach($news as $newsItem){ ?>
+                    <div class="newsitem_sidebar">
+                        <h3><a href="news.php"><?= substr($newsItem->title, 0, 40) ?>...</a></h3>
+                        <p class="desc">
+                            <?= substr($newsItem->description, 0, 100) ?>...
+                        </p>
+                    </div>
+                <?php } ?>
+                <a href="newsfeed/newsReader.php?lang=<?= $lang ?>" target="_blank"><img src="img/rss.png" alt="rss"></a>
+            </div>
 			<div>
 				Weather
 			</div>
