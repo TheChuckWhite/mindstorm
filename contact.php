@@ -111,7 +111,7 @@ li
 				<li><a href="about.html">About</a></li>
 				<li><a href="courses.html">Courses</a></li>
 				<li><a href="events.html">Events</a></li>
-				<li><a href="news.html">News</a></li>
+				<li><a href="news.php">News</a></li>
 				<li id="active"><a href="contact.php">Contact</a></li>
 
 			</ul>
