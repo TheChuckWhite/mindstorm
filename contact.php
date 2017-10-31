@@ -161,9 +161,10 @@ li
 				</p>
 				<div class="form">
                             <?php
-                            $text = $_POST['text'];
+
                             if (isset($_POST['submit']))
                             {
+                                $text = $_POST['text'];
                                 if (!empty($text))
                                 {
                                     echo '<font color="red"><font size="20">*Thank you for the interest in our university! We will try to answer them as soon as possible!</font>';
