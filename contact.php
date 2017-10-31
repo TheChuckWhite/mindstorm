@@ -100,7 +100,7 @@ li
 			</div>
 
 			<div id="flag">
-				<img src="img/it_flag.png" alt="italian flag">
+                <a href="contactit.php"><img src="img/it_flag.png" alt="italian flag"></a>
 			</div>
 		</div>
 	</header>
@@ -125,13 +125,13 @@ li
 				<h2>Opening hours</h2>
 				<div class="contents">	
 					<div id="days">
-						<ul>
-							<li>Monday</li>
-							<li>Tuesday</li>
-							<li>Wednesday</li>
-							<li>Thursday</li>
-							<li>Friday</li>
-						</ul>
+							<ul>
+								<li>Monday</li>
+								<li>Tuesday</li>
+								<li>Wednesday</li>
+								<li>Thursday</li>
+								<li>Friday</li>
+							</ul>
 					</div>
 					<div id="hours">
 						<ul>

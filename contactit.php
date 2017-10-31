@@ -100,7 +100,7 @@ li
 			</div>
 
 			<div id="flag">
-				<img src="img/it_flag.png" alt="italian flag">
+                <a href="contact.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
 			</div>
 		</div>
 	</header>
@@ -160,9 +160,9 @@ li
 				</p>
 				<div class="form">
                             <?php
-                            $text = $_POST['text'];
                             if (isset($_POST['submit']))
                             {
+                                $text = $_POST['text'];
                                 if (!empty($text))
                                 {
                                     echo '<font color="red">*Grazie del feedback!</font>';
