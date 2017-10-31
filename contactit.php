@@ -112,7 +112,7 @@ li
 				<li><a href="coursesit.html">Corsi</a></li>
 				<li><a href="eventsit.html">Eventi</a></li>
 				<li><a href="newsit.html">Novità</a></li>
-				<li><a href="contactit.php">Contatti</a></li>
+				<li id="active"><a href="contactit.php">Contatti</a></li>
 
 			</ul>
 		</nav>
