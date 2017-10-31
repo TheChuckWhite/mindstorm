@@ -107,12 +107,12 @@ li
 	<div id="navWrap">
 		<nav>
 			<ul>	
-				<li><a href="index.html">Home</a></li>
-				<li><a href="">Su di noi</a></li>
-				<li><a href="">Corsi</a></li>
-				<li><a href="events.html">Eventi</a></li>
-				<li><a href="news.html">Novità</a></li>
-				<li><a href="contact.html">Contatti</a></li>
+				<li><a href="indexit.html">Home</a></li>
+				<li><a href="aboutit.html">Su di noi</a></li>
+				<li><a href="coursesit.html">Corsi</a></li>
+				<li><a href="eventsit.html">Eventi</a></li>
+				<li><a href="newsit.html">Novità</a></li>
+				<li><a href="contactit.php">Contatti</a></li>
 
 			</ul>
 		</nav>
