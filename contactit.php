@@ -160,9 +160,9 @@ li
 				</p>
 				<div class="form">
                             <?php
-                            $text = $_POST['text'];
                             if (isset($_POST['submit']))
                             {
+                                $text = $_POST['text'];
                                 if (!empty($text))
                                 {
                                     echo '<font color="red">*Grazie del feedback!</font>';
