@@ -23,7 +23,7 @@
 			</div>
 
 			<div id="flag">
-				<a href="index.html"><img src="img/uk_flag.png" alt="brittish flag"></a>
+				<a href="index.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
 			</div>
 		</div>
 	</header>

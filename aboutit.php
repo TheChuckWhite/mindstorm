@@ -7,12 +7,10 @@
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/news.css">
+
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 <body>
@@ -25,7 +23,7 @@
 			</div>
 
 			<div id="flag">
-				<a href="events.html"><img src="img/uk_flag.png" alt="brittis flag"></a>
+				<a href="about.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
 			</div>
 		</div>
 	</header>
@@ -33,9 +31,9 @@
 		<nav>
 			<ul>	
 				<li><a href="indexit.html">Home</a></li>
-				<li><a href="aboutit.html">Su di noi</a></li>
+				<li id="active"><a href="aboutit.html">Su di noi</a></li>
 				<li><a href="coursesit.html">Corsi</a></li>
-				<li id="active"><a href="eventsit.html">Eventi</a></li>
+				<li><a href="eventsit.html">Eventi</a></li>
 				<li><a href="newsit.php">Novità</a></li>
 				<li><a href="contactit.php">Contatti</a></li>
 			</ul>
@@ -44,26 +42,43 @@
 	<div class="wrapper">
 		<div id="content">
 			<article>
-				<h2>Open Day</h2>
+				<h2>Su Da Vinci University</h2>
 				<p>
-				L'Open Day ti darà la possibilità di incontrare gli insegnanti del primo corso di studio e di scoprire di più su cosa studierai qui.</p>
+					Quando arriverai alla nostra università vedrai subito che si incarna perfettamente il significato del suo nome. Siamo come Da Vinci - uniamo varie discipline in un unico luogo, portiamo tutto insieme e lo facciamo lavorare come una macchina ben costruita.
+				</p>
 
-‌‌				<h3>Stands e discussioni</h3> 
-				<p>
-				I nostri stand ti daranno più informazioni sulla tua materia di scelta e un impressione di ciò che sarà nei prossimi anni qui. Se non ottieni tutte le risposte alle tue domande durante la discussione, puoi anche parlare con il nostro staff per scoprire di più. Un rappresentante per quasi ognuno dei nostri programmi di laurea sarà presente alla fiera.
-				</p>
 			</article>
+
 			<article>
-				<h2>Study Choice</h2>
+				<h2>Il Nostro Logo</h2>
 				<p>
-				Lo Study Choice è uno degli eventi più importanti a cui si può partecipare, puoi trovare più informazioni sulle tue scelte di studio che offriamo e capire meglio ciò che l'università ha da offrire.
+					Il nostro logo è un modello virtuale del famoso uomo Vitruviano di Da Vinci. Come si sa, l'uomo Vitruviano è una rappresentazione visiva dei canoni della proporzione. L'uomo e l'architettura si uniscono perfettamente insieme in un'unica immagine della proporzione del tutto. Così come la nostra univerità - uniamo uomo e disciplina, portando insime le due e dandosi il meglio a vicenda.
 				</p>
+
 			</article>
+
 			<article>
-				<h2>International Day</h2>
+				<h2>Facoltà Della Da Vinci University</h2>
 				<p>
-				L' International Day alla Da Vinci University è una grande opportunità per avere un migliore inizio. Imparerai cose importanti e pratiche da fare nella prima settimana, le esperienze accademiche e sociali alla Da Vinci, e incontrerai nuovi amici. Unisciti subito e impara di più sui club e le società, opportunità di volontariato, e il supporto disponibile per te che sei uno studente internazionale. 
+					La nostrà univerità ha al momento due location. Situata in Emmen e Groningen. Entrambe le location sono completamente aperte a tutti gli studenti della Da Vinci University, a prescindere dal campus di appartenenza. Perciò, grazie alla poca distanza tra le due, tutti gli studenti sono i benvenuti a usare le apparechiature da entrambi i campus.
 				</p>
+
+			</article>
+
+			<article>
+				<h2>Corsi Disponibili</h2>
+				<p>
+					La nostra univerità fornisce una varietà di corse tra cui scegliere. Per i più tecnici abbiamo il corso di Ingegneria Elettronica. Per quelli ansiosi di sapere tutto abbiamo Ingegneria Informatica. Per i romantici creatori abbiamo un corso di Costruzione di Strumenti Classici. E, ovviamete, possiamo accomodare i più vivaci e tecno-friendly studenti con il nostro corso di Musica Elettronica.
+				</p>
+
+			</article>
+
+			<article>
+				<h2>Stile di Apprendimento</h2>
+				<p>
+					Per la nostra univerità abbiamo scelto un diverso modo per ottenere le abbilità e l'educazione. Abbiamo deciso che il modo migliore di preparare gli studenti al mondo reale fosse quello di dargli dei punti di vista sia pratici che teorici. Questo significa che, apparte i nostri labboratori più pratici, abbiamo anche un programma basato sull'apprendimento, dove gli studenti prendono un caso e, grazie ad approcci teoretici, provano a trovare una soluzione.
+				</p>
+
 			</article>
 		</div>
 
@@ -94,14 +109,14 @@
 				</div>
 				<div>
 					<img src="img/youtube.png" alt="youtube">
-				</div>				
+				</div>
 			</div>
 		</aside>
 	</div>
 	<footer>
 		<div class="footWrap">
 			<div class="footBox">
-				<h3>Dove siamo</h3>
+				<h3>Locations</h3>
 				<ul>
 					<li>Emmen</li>
 					<li>Groningen</li>

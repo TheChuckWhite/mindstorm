@@ -210,18 +210,15 @@
 		</div>
 		<aside>
 			<div>
+				<?php foreach($news as $newsItem){ ?>
 				<div class="newsitem_sidebar">
-					<h3>DU received qualification</h3>
-					<p class="desc">In 2017 DaVinci University received the top qualification in the HBO Selection Guide.</p>
+					<h3><a href="news.php"><?= substr($newsItem->title, 0, 40) ?>...</a></h3>
+					<p class="desc">
+						<?= substr($newsItem->description, 0, 100) ?>...
+					</p>
 				</div>
-				<div class="newsitem_sidebar">
-					<h3>Jump-start your job search</h3>
-					<p class="desc">In DaVinci University’s series “Jump-start Your Job Search,” DaVinci University brings you short interviews with companies linked to your education.</p>
-				</div>
-				<div class="newsitem_sidebar">
-					<h3>DU student won the Luthier price</h3>
-					<p class="desc">8349 people joined this year's race against the clock to make the perfect stringed instrument in 1 week, working on their instrument 5 hours a day</p>
-				</div>
+				<?php } ?>
+				<a href="newsfeed/newsReader.php?lang=<?= $lang ?>" target="_blank"><img src="img/rss.png" alt="rss"></a>
 			</div>
 			<div>
 				Weather
