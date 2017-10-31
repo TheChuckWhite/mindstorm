@@ -45,3 +45,31 @@ aside div div.newsitem_sidebar p{
 	font-size: 14px;
 	margin-top: 5px;
 }
+
+aside div.weather h3{
+	color: #ff6600;
+	font-size: 18px;
+}
+aside div.weather div{
+	width: 80px;
+	height: 70px;
+	float: left;
+}
+aside div.weather div:last-child{
+	margin-left: 10px;
+	width: 140px;
+}
+aside div.weather div.weather_img img{
+	height: 60px;
+	margin-top: 5px;
+}
+aside div.weather div.weather_info h4{
+	color: #929292;
+	margin-top: 10px;
+	font-size: 20px;
+}
+aside div.weather div.weather_info p{
+	color: #ff6600;
+	margin-top: 5px;
+	font-size: 28px;
+}

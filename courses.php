@@ -2,6 +2,8 @@
 define("IN_PAGE", true);
 $lang = "en";
 $news = include"newsfeed/newsReader.php";
+
+include"php/weather.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -225,9 +227,14 @@ $news = include"newsfeed/newsReader.php";
 				<?php } ?>
 				<a href="newsfeed/newsReader.php?lang=<?= $lang ?>" target="_blank"><img src="img/rss.png" alt="rss"></a>
 			</div>
-			<div>
-				Weather
-			</div>
+            <div class="weather">
+                <h3>Weather in Emmen</h3>
+                <div class="weather_img"><img src="img/weather/<?=$weatherString?>.png" alt="<?=$weatherString?>"></div>
+                <div class="weather_info">
+                    <h4><?= $today->text ?></h4>
+                    <p><?= $temperature ?>&#176;C</p>
+                </div>
+            </div>
 			<div id="social">
 				<div>
 					<img src="img/facebook.png" alt="facebook">

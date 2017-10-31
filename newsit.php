@@ -1,7 +1,9 @@
 <?php
 define("IN_PAGE", true);
 $lang = "it";
-$news = include "newsfeed/newsReader.php";
+$news = include"newsfeed/newsReader.php";
+
+include"php/weather.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -61,7 +63,7 @@ $news = include "newsfeed/newsReader.php";
             <div>
                 <?php foreach($news as $newsItem){ ?>
                     <div class="newsitem_sidebar">
-                        <h3><a href="news.php"><?= substr($newsItem->title, 0, 40) ?>...</a></h3>
+                        <h3><a href="newsit.php"><?= substr($newsItem->title, 0, 40) ?>...</a></h3>
                         <p class="desc">
                             <?= substr($newsItem->description, 0, 100) ?>...
                         </p>
@@ -69,9 +71,14 @@ $news = include "newsfeed/newsReader.php";
                 <?php } ?>
                 <a href="newsfeed/newsReader.php?lang=<?= $lang ?>" target="_blank"><img src="img/rss.png" alt="rss"></a>
             </div>
-			<div>
-				Weather
-			</div>
+            <div class="weather">
+                <h3>Tempo in Emmen</h3>
+                <div class="weather_img"><img src="img/weather/<?=$weatherString?>.png" alt="<?=$weatherString?>"></div>
+                <div class="weather_info">
+                    <h4><?= $today->text ?></h4>
+                    <p><?= $temperature ?>&#176;C</p>
+                </div>
+            </div>
 			<div id="social">
 				<div>
 					<img src="img/facebook.png" alt="facebook">
