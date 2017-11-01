@@ -14,6 +14,7 @@ include"php/weather.php";
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
 
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -76,6 +77,7 @@ include"php/weather.php";
 				<h2>Corsi Disponibili</h2>
 				<p>
 					La nostra univerità fornisce una varietà di corse tra cui scegliere. Per i più tecnici abbiamo il corso di Ingegneria Elettronica. Per quelli ansiosi di sapere tutto abbiamo Ingegneria Informatica. Per i romantici creatori abbiamo un corso di Costruzione di Strumenti Classici. E, ovviamete, possiamo accomodare i più vivaci e tecno-friendly studenti con il nostro corso di Musica Elettronica.
+					<p id="coursesBtn"><a href="coursesit.php"><input type="button" name="coursesBtn" value="Courses"></a></p>
 				</p>
 
 			</article>
