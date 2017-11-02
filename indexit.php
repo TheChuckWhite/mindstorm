@@ -56,9 +56,9 @@ include"php/weather.php";
 			</article>
 			<article class="dualbox">
 				<div class="indexbox" id="campusbox">
-					<a href="">
+					<a href="aboutit.php">
 						<div class="overlay">
-							<p>Campus</p>
+							<p>Da Vinci<br>University</p>
 						</div>
 					</a>
 				</div>
@@ -103,13 +103,13 @@ include"php/weather.php";
             </div>
 			<div id="social">
 				<div>
-					<img src="img/facebook.png" alt="facebook">
+					<a href="http://www.facebook.com"><img class="socialimg" src="img/facebook.png" alt="facebook"></a>
 				</div>
 				<div>
-					<img src="img/twitter.png" alt="twitter">
+					<a href="http://www.twitter.com"><img class="socialimg" src="img/twitter.png" alt="twitter"></a>
 				</div>
 				<div>
-					<img src="img/youtube.png" alt="youtube">
+					<a href="http://www.youtube.com"><img class="socialimg" src="img/youtube.png" alt="youtube"></a>
 				</div>				
 			</div>
 		</aside>
