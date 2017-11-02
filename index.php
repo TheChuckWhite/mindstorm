@@ -24,7 +24,7 @@ include"php/weather.php";
 	<header>
 		<div id="headWrap">
 			<div id="logo">
-				<img src="img/logo.png">
+				<img src="img/logo.png" alt="logo">
 				<div id="vinci">Da Vinci University</div>
 				<div id="learn">Learning never exhausts the mind</div>
 			</div>
@@ -59,9 +59,9 @@ include"php/weather.php";
 			</article>
 			<article class="dualbox">
 				<div class="indexbox" id="campusbox">
-					<a href="">
+					<a href="about.php">
 						<div class="overlay">
-							<p>Campus</p>
+							<p>Da Vinci<br>University</p>
 						</div>
 					</a>
 				</div>
