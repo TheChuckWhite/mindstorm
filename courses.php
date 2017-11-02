@@ -1,4 +1,10 @@
+<?php
+define("IN_PAGE", true);
+$lang = "en";
+$news = include"newsfeed/newsReader.php";
 
+include"php/weather.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,13 +32,6 @@
 			</div>
 		</div>
 	</header>
-	<?php
-define("IN_PAGE", true);
-$lang = "en";
-$news = include"newsfeed/newsReader.php";
-
-include"php/weather.php";
-?>
 	<div id="navWrap">
 		<nav>
 			<ul>	
@@ -42,7 +41,6 @@ include"php/weather.php";
 				<li><a href="events.php">Events</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="contact.php">Contact</a></li>
-                <li><a href="photos.php">Photos</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -239,13 +237,13 @@ include"php/weather.php";
             </div>
 			<div id="social">
 				<div>
-					<a href="http://www.facebook.com"><img class="socialimg" src="img/facebook.png" alt="facebook"></a>
+					<img src="img/facebook.png" alt="facebook">
 				</div>
 				<div>
-					<a href="http://www.twitter.com"><img class="socialimg" src="img/twitter.png" alt="twitter"></a>
+					<img src="img/twitter.png" alt="twitter">
 				</div>
 				<div>
-					<a href="http://www.youtube.com"><img class="socialimg" src="img/youtube.png" alt="youtube"></a>
+					<img src="img/youtube.png" alt="youtube">
 				</div>				
 			</div>
 		</aside>
@@ -269,7 +267,6 @@ include"php/weather.php";
 					<li><a href="events.php">Events</a></li>
 					<li><a href="news.php">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
-                    <li><a href="photos.php">Photos</a></li>
 				</ul>
 			</div>
 			<div class="footBox">

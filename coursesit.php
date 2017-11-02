@@ -72,7 +72,7 @@ include"php/weather.php";
 </article>
 
 				<article>
-				<div class="banner" id='apply'>
+				<div class="banner" id='howToApply'>
 					<div class="overlayNoTransition">
 						<p>Come Iscriversi</p>
 					</div>
