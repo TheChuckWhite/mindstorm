@@ -48,7 +48,7 @@ include"php/weather.php";
 	<div class="wrapper">
 		<div id="content">
 			<article>
-				<div class="banner" id='general'>
+				<div class="banner" id='generalRequirements'>
 					<div class="overlayNoTransition">
 						<p>General requirements</p>
 					</div>
@@ -201,13 +201,13 @@ include"php/weather.php";
             </div>
 			<div id="social">
 				<div>
-					<img src="img/facebook.png" alt="facebook">
+					<a href="http://www.facebook.com"><img class="socialimg" src="img/facebook.png" alt="facebook"></a>
 				</div>
 				<div>
-					<img src="img/twitter.png" alt="twitter">
+					<a href="http://www.twitter.com"><img class="socialimg" src="img/twitter.png" alt="twitter"></a>
 				</div>
 				<div>
-					<img src="img/youtube.png" alt="youtube">
+					<a href="http://www.youtube.com"><img class="socialimg" src="img/youtube.png" alt="youtube"></a>
 				</div>				
 			</div>
 		</aside>
