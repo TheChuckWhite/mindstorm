@@ -52,7 +52,10 @@ include"php/weather.php";
 			<article>
 				<h2>Studia al estero con<br>Da Vinci University</h2>
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit?
+					La Da Vinci University offre un ambiente di studio internazionale per completare i tuoi studi con studenti da oltre 50 nazioni diverse da tutto il mondo. Ogni anno dozine di studenti finiscono i loro corsi di laurea o master in uno dei nostri corsi internazionali.
+				</p>
+				<p>
+					Il tuo diploma in Ingegneria Tecnica, Ingegneria Informatica, Musica Elettronia o Costruzione di strumenti classici sarà riconosciuta globalmente e hai ottime possibilità di iniziare la tua carriera in una compagnia multinazionale.
 				</p>
 			</article>
 			<article class="dualbox">
@@ -74,11 +77,11 @@ include"php/weather.php";
 			<article>
 				<h2>Più di un semplice numero</h2>
 				<p>
-				quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit?quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit?
+				Alla Da Vinci University gli studenti lavorano a stretto contatto con i loro inseganti e sono trattati in egual modo e rispetto. Ogni giorno vi è un orario specifico dove gli studenti possono consultarsi con i loro insegnanti per problemi personali o di studio.
 				</p>
 
 				<p>
-				magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit? quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit?quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
+				Ogni periodo gli studenti devono anche completare un progetto con un piccolo gruppo di studio. Questo non solo aumenta le loro capacità di apprendimento, ma migliora anche le loro abilità sociali e ciò porterà a un migliore ambiente di studio.
 				</p>
 			</article>
 		</div>
