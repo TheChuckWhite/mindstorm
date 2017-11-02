@@ -1,0 +1,48 @@
+header{
+    border-bottom: 4px solid #ff6600;;
+}
+article.shorter{
+     min-height: 130px;
+ }
+article form{
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+article form input{
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff6600;
+    float: left;
+    background: white;
+}
+article form input:focus{
+    outline: none;
+}
+article form input[type='submit']{
+    width: 100px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    border: 2px solid #ff6600;
+    background: #fff;
+    color: #ff6600;
+    float: right;
+    transition: 400ms;
+}
+article form input[type='submit']:hover{
+    transition: 400ms;
+    box-shadow: inset 100px 0 0 0 #ff6600;
+    color: #fff;
+    cursor: pointer;
+}
+
+span#text_wrong{
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}

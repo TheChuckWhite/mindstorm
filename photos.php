@@ -33,6 +33,9 @@ include"php/weather.php";
         <div id="flag">
             <a href="indexit.php"><img src="img/it_flag.png" alt="italian flag"></a>
         </div>
+        <div id="login">
+            <a href="login.php">Login</a>
+        </div>
     </div>
 </header>
 <div id="navWrap">
@@ -50,17 +53,17 @@ include"php/weather.php";
 </div>
 <div class="wrapper">
     <div id="content">
-        <article>
+        <article class="shorter">
             <form action="php/upload.php" method="POST" enctype="multipart/form-data">
                 <p>Upload your picture here</p>
                 <p class="small">Your picture will first be checked before it is uploaded</p>
                 <input type="file" name="fileToUpload" id="fileToUpload">
                 <input type="submit" value="Upload Image" name="submit">
             </form>
-            <article>
-                <div><img src="uploads/dummy.jpg" alt="dummy"></div>
-                <div><img src="uploads/dummy2.jpg" alt="dummy2"></div>
-            </article>
+        </article>
+        <article>
+            <div><img src="uploads/dummy.jpg" alt="dummy"></div>
+            <div><img src="uploads/dummy2.jpg" alt="dummy2"></div>
         </article>
     </div>
     <aside>
