@@ -44,6 +44,7 @@ include"php/weather.php";
 				<li><a href="events.php">Events</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="contact.php">Contact</a></li>
+                <li><a href="photos.php">Photos</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -77,9 +78,7 @@ include"php/weather.php";
 				<h2>Courses Available</h2>
 				<p>
 					Our university provides a variety of courses to choose from. For the most technical ones we have Electrical Engineering course. For those eager to know how to find everything we have Information Technology. For the romantic creators we have a course of Building Classical Instruments. And, of course, we can accommodate the most lively and technology-friendly students with our Electronic Music course.
-					<p id="coursesBtn"><a href="courses.php"><input type="button" name="coursesBtn" value="Courses"></a></p>
-				</p>
-			
+					<p id="coursesBtn"><a href="courses.php"><input type="button" name="coursesBtn" value="Courses"></a></p>			
 			</article>
 			
 			<article>
@@ -112,13 +111,13 @@ include"php/weather.php";
             </div>
 			<div id="social">
 				<div>
-					<img src="img/facebook.png" alt="facebook">
+					<a href="http://www.facebook.com"><img class="socialimg" src="img/facebook.png" alt="facebook"></a>
 				</div>
 				<div>
-					<img src="img/twitter.png" alt="twitter">
+					<a href="http://www.twitter.com"><img class="socialimg" src="img/twitter.png" alt="twitter"></a>
 				</div>
 				<div>
-					<img src="img/youtube.png" alt="youtube">
+					<a href="http://www.youtube.com"><img class="socialimg" src="img/youtube.png" alt="youtube"></a>
 				</div>				
 			</div>
 		</aside>
@@ -136,12 +135,13 @@ include"php/weather.php";
 			<div class="footBox">
 				<h3>Da Vinci University</h3>
 				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="about.php">About</a></li>
-					<li><a href="courses.php">Courses</a></li>
-					<li><a href="events.php">Events</a></li>
-					<li><a href="news.php">News</a></li>
-					<li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="courses.php">Courses</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="news.php">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="photos.php">Photos</a></li>
 				</ul>
 			</div>
 			<div class="footBox">

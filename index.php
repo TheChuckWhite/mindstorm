@@ -43,6 +43,7 @@ include"php/weather.php";
 				<li><a href="events.php">Events</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="contact.php">Contact</a></li>
+                <li><a href="photos.php">Photos</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -106,13 +107,13 @@ include"php/weather.php";
             </div>
 			<div id="social">
 				<div>
-					<img src="img/facebook.png" alt="facebook">
+					<a href="http://www.facebook.com"><img class="socialimg" src="img/facebook.png" alt="facebook"></a>
 				</div>
 				<div>
-					<img src="img/twitter.png" alt="twitter">
+					<a href="http://www.twitter.com"><img class="socialimg" src="img/twitter.png" alt="twitter"></a>
 				</div>
 				<div>
-					<img src="img/youtube.png" alt="youtube">
+					<a href="http://www.youtube.com"><img class="socialimg" src="img/youtube.png" alt="youtube"></a>
 				</div>				
 			</div>
 		</aside>
@@ -136,6 +137,7 @@ include"php/weather.php";
 					<li><a href="events.php">Events</a></li>
 					<li><a href="news.php">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
+                    <li><a href="photos.php">Photos</a></li>
 				</ul>
 			</div>
 			<div class="footBox">
