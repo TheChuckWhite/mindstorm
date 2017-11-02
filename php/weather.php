@@ -11,15 +11,11 @@ $json = curl_exec($session);
 // Convert JSON to PHP object
 $phpObj =  json_decode($json);
 //var_dump($phpObj);
-$forecast = $phpObj->query->results->channel->item->forecast;
+//$forecast = $phpObj->query->results->channel->item->forecast;
 
-$today = $forecast[0];
-$todayCode = $forecast[0]->code;
-
-//Get average temperature
-$high = round(($today->high - 32) / 1.8);
-$low = round(($today->low - 32) / 1.8);
-$temperature = ($high + $low) / 2;
+$today = $phpObj->query->results->channel->item->condition;
+$todayCode = $today->code;
+$temperature = round(($today->temp - 32) /1.8);
 
 //Get the correct Image according to weather that day
 $codes = array(
