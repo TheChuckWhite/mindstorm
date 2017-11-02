@@ -1,10 +1,4 @@
-<?php
-define("IN_PAGE", true);
-$lang = "en";
-$news = include"newsfeed/newsReader.php";
 
-include"php/weather.php";
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +26,13 @@ include"php/weather.php";
 			</div>
 		</div>
 	</header>
+	<?php
+define("IN_PAGE", true);
+$lang = "en";
+$news = include"newsfeed/newsReader.php";
+
+include"php/weather.php";
+?>
 	<div id="navWrap">
 		<nav>
 			<ul>	
