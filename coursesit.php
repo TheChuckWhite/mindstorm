@@ -47,7 +47,7 @@ include"php/weather.php";
 	<div class="wrapper">
 		<div id="content">
 			<article>
-				<div class="banner" id='general'>
+				<div class="banner" id='generalRequirements'>
 					<div class="overlayNoTransition">
 						<p>General requirements</p>
 					</div>
