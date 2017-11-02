@@ -120,6 +120,7 @@ li
 				<li><a href="events.php">Events</a></li>
 				<li><a href="news.php">News</a></li>
 				<li id="active"><a href="contact.php">Contact</a></li>
+                <li><a href="photos.php">Photos</a></li>
 
 			</ul>
 		</nav>
@@ -257,13 +258,13 @@ li
 			<div class="footBox">
 				<h3>Da Vinci University</h3>
 				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Courses</li>
-					<li>Events</li>
-					<li>News</li>
-					<li>Contact</li>
-
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="courses.php">Courses</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="news.php">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="photos.php">Photos</a></li>
 				</ul>
 			</div>
 			<div class="footBox">

@@ -120,6 +120,7 @@ li
 				<li><a href="eventsit.php">Eventi</a></li>
 				<li><a href="newsit.php">Novità</a></li>
 				<li id="active"><a href="contactit.php">Contatti</a></li>
+                <li><a href="photosit.php">Fotografie</a></li>
 
 			</ul>
 		</nav>
@@ -261,6 +262,7 @@ li
 					<li><a href="eventsit.php">Eventi</a></li>
 					<li><a href="newsit.php">Novità</a></li>
 					<li><a href="contactit.html">Contatti</a></li>
+                    <li><a href="photosit.php">Fotografie</a></li>
 				</ul>
 			</div>
 			<div class="footBox">

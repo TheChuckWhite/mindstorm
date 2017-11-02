@@ -42,6 +42,7 @@ include"php/weather.php";
 				<li><a href="eventsit.php">Eventi</a></li>
 				<li id="active"><a href="newsit.php">Novità</a></li>
 				<li><a href="contactit.php">Contatti</a></li>
+                <li><a href="photosit.php">Fotografie</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -111,6 +112,7 @@ include"php/weather.php";
 					<li><a href="eventsit.php">Events</a></li>
 					<li><a href="newsit.php">News</a></li>
 					<li><a href="contactit.html">Contact</a></li>
+                    <li><a href="photosit.php">Fotografie</a></li>
 				</ul>
 			</div>
 			<div class="footBox">

@@ -45,6 +45,7 @@ include"php/weather.php";
 				<li id="active"><a href="events.php">Events</a></li>
 				<li><a href="news.php">News</a></li>
 				<li><a href="contact.php">Contact</a></li>
+                <li><a href="photos.php">Photos</a></li>
 
 			</ul>
 		</nav>
@@ -132,6 +133,7 @@ include"php/weather.php";
 					<li><a href="events.php">Events</a></li>
 					<li><a href="news.php">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
+                    <li><a href="photos.php">Photos</a></li>
 				</ul>
 			</div>
 			<div class="footBox">
