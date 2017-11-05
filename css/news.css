@@ -1,15 +1,15 @@
 
-div#content article{
+div.content article{
 	height: auto;
 }
-div#content article div{
+div.content article div{
 	height: 30px;
 
 	}
-div#content article h2{
+div.content article h2{
 	margin-bottom: 10px;
 }
-div#content article span{
+div.content article span{
 	float: left;
 	color: #929292;
 	width: 100%;

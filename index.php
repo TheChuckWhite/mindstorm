@@ -22,22 +22,22 @@ include"php/weather.php";
 </head>
 <body>
 	<header>
-		<div id="headWrap">
-			<div id="logo">
+		<div class="headWrap">
+			<div class="logo">
 				<img src="img/logo.png" alt="logo">
-				<div id="vinci">Da Vinci University</div>
-				<div id="learn">Learning never exhausts the mind</div>
+				<div class="vinci">Da Vinci University</div>
+				<div class="learn">Learning never exhausts the mind</div>
 			</div>
 
-			<div id="flag">
+			<div class="flag">
 				<a href="indexit.php"><img src="img/it_flag.png" alt="italian flag"></a>
 			</div>
 		</div>
 	</header>
-	<div id="navWrap">
+	<div class="navWrap">
 		<nav>
 			<ul>	
-				<li id="active"><a href="index.php">Home</a></li>
+				<li class="active"><a href="index.php">Home</a></li>
 				<li><a href="about.php">About</a></li>
 				<li><a href="courses.php">Courses</a></li>
 				<li><a href="events.php">Events</a></li>
@@ -48,7 +48,7 @@ include"php/weather.php";
 		</nav>
 	</div>
 	<div class="wrapper">
-		<div id="content">
+		<div class="content">
 			<article>
 				<h2>Study international at<br>Da Vinci University</h2>
 				<p>
@@ -105,7 +105,7 @@ include"php/weather.php";
                     <p><?= $temperature ?>&#176;C</p>
                 </div>
             </div>
-			<div id="social">
+			<div class="social">
 				<div>
 					<a href="http://www.facebook.com"><img class="socialimg" src="img/facebook.png" alt="facebook"></a>
 				</div>
@@ -145,10 +145,10 @@ include"php/weather.php";
 			</div>
 		</div>
 	</footer>
-	<div id="footbar">
+	<div class="footbar">
 		<div class="footWrap">
 			Da Vinci University
-			<span id="copy">&copy; 2018</span>
+			<span class="copy">&copy; 2018</span>
 		</div>
 			
 	</div>

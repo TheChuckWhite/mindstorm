@@ -20,24 +20,24 @@ include"php/weather.php";
 </head>
 <body>
 	<header>
-		<div id="headWrap">
-			<div id="logo">
+		<div class="headWrap">
+			<div class="logo">
 				<img src="img/logo.png">
-				<div id="vinci">Da Vinci University</div>
-				<div id="learn">Learning never exhausts the mind</div>
+				<div class="vinci">Da Vinci University</div>
+				<div class="learn">Learning never exhausts the mind</div>
 			</div>
 
-			<div id="flag">
+			<div class="flag">
 				<a href="courses.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
 			</div>
 		</div>
 	</header>
-	<div id="navWrap">
+	<div class="navWrap">
 		<nav>
 			<ul>	
 				<li><a href="indexit.php">Home</a></li>
 				<li><a href="aboutit.php">Su di noi</a></li>
-				<li id="active"><a href="coursesit.php">Corsi</a></li>
+				<li class="active"><a href="coursesit.php">Corsi</a></li>
 				<li><a href="eventsit.php">Eventi</a></li>
 				<li><a href="newsit.php">Novità</a></li>
 				<li><a href="contactit.php">Contatti</a></li>
@@ -46,7 +46,7 @@ include"php/weather.php";
 		</nav>
 	</div>
 	<div class="wrapper">
-		<div id="content">
+		<div class="content">
 			<article>
 				<div class="banner" id='generalRequirements'>
 					<div class="overlayNoTransition">
@@ -199,7 +199,7 @@ include"php/weather.php";
                     <p><?= $temperature ?>&#176;C</p>
                 </div>
             </div>
-			<div id="social">
+			<div class="social">
 				<div>
 					<a href="http://www.facebook.com"><img class="socialimg" src="img/facebook.png" alt="facebook"></a>
 				</div>
@@ -239,12 +239,11 @@ include"php/weather.php";
 			</div>
 		</div>
 	</footer>
-	<div id="footbar">
+	<div class="footbar">
 		<div class="footWrap">
 			Da Vinci University
-			<span id="copy">&copy; 2018</span>
+			<span class="copy">&copy; 2018</span>
 		</div>
-			
 	</div>
 </body>
 </html>

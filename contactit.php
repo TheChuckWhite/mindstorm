@@ -22,96 +22,22 @@ include"php/weather.php";
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <style>
-            .contact
-{
-	font-size: 28px;
-	margin-bottom: 15px;
-}
-.contents
-{
-	font-size: 18px;
-	width: 100%;
-	text-align: justify;
-	float: left;
-	margin-top: 10px;
-}
-
-label 
-{
-    display:block;
-    margin-top:20px;
-    letter-spacing:2px;
-    margin-bottom: 10px;
-    text-align: left;
-    margin-left: 10px;
-}
-textarea 
-{
-	width:439px;
-	height:50px;
-	background:#efefef;
-	border:1px solid #dedede;
-	padding:10px;
-	margin-top:3px;
-	font-size:0.9em;
-	color:#3a3a3a;
-	resize: none;
-        margin-left: 10px;
-	
-	
-}
-input
-{
-	margin-left: 370px;
-	margin-top: 10px;
-	height: 40px;
-	border-radius: 10px;
-	padding:10px;
-	font-size:18px;
-	color:#3a3a3a;
-
-}
-#comment
-{
-	height: 70px;
-}
-.form
-{
-	margin-top: 10px;	
-}
-#days,#hours
-{
-	float: left;
-	margin-right: 30px;
-}
-li
-{
-	margin-bottom: 10px;
-}
-#blank
-{
-	float: left;
-	height: 40px;
-	width: 100%;
-}
-        </style>
 </head>
 <body>
 	<header>
-		<div id="headWrap">
-			<div id="logo">
+		<div class="headWrap">
+			<div class="logo">
 				<img src="img/logo.png">
-				<div id="vinci">Da Vinci University</div>
-				<div id="learn">Learning never exhausts the mind</div>
+				<div class="vinci">Da Vinci University</div>
+				<div class="learn">Learning never exhausts the mind</div>
 			</div>
 
-			<div id="flag">
+			<div class="flag">
                 <a href="contact.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
 			</div>
 		</div>
 	</header>
-	<div id="navWrap">
+	<div class="navWrap">
 		<nav>
 			<ul>	
 				<li><a href="indexit.php">Home</a></li>
@@ -119,14 +45,14 @@ li
 				<li><a href="coursesit.php">Corsi</a></li>
 				<li><a href="eventsit.php">Eventi</a></li>
 				<li><a href="newsit.php">Novità</a></li>
-				<li id="active"><a href="contactit.php">Contatti</a></li>
+				<li class="active"><a href="contactit.php">Contatti</a></li>
                 <li><a href="photosit.php">Fotografie</a></li>
 
 			</ul>
 		</nav>
 	</div>
 	<div class="wrapper">
-		<div id="content">
+		<div class="content">
 			<article>
 				<h2>Orari di aperutra</h2>
 				<div class="contents">	
@@ -230,7 +156,7 @@ li
                     <p><?= $temperature ?>&#176;C</p>
                 </div>
             </div>
-			<div id="social">
+			<div class="social">
 				<div>
 					<a href="http://www.facebook.com"><img class="socialimg" src="img/facebook.png" alt="facebook"></a>
 				</div>
@@ -243,40 +169,37 @@ li
 			</div>
 		</aside>
 	</div>
-		<footer>
-		<div class="footWrap">
-			<div class="footBox">
-				<h3>Dove siamo</h3>
-				<ul>
-					<li>Emmen</li>
-					<li>Groningen</li>
-
-				</ul>
-			</div>
-			<div class="footBox">
-				<h3>Da Vinci University</h3>
-				<ul>
-					<li><a href="indexit.php">Home</a></li>
-					<li><a href="aboutit.php">Su di noi</a></li>
-					<li><a href="coursesit.php">Corsi</a></li>
-					<li><a href="eventsit.php">Eventi</a></li>
-					<li><a href="newsit.php">Novità</a></li>
-					<li><a href="contactit.html">Contatti</a></li>
-                    <li><a href="photosit.php">Fotografie</a></li>
-				</ul>
-			</div>
-			<div class="footBox">
-				<h3>Registrati al Open Day</h3>
-			</div>
-		</div>
-	</footer>		
-		
-	
-	<div id="footbar">
-		<div class="footWrap">
-			<span>Da Vinci University</span>
-		</div>
-			
-	</div>
+    <footer>
+        <div class="footWrap">
+            <div class="footBox">
+                <h3>Locations</h3>
+                <ul>
+                    <li>Emmen</li>
+                    <li>Groningen</li>
+                </ul>
+            </div>
+            <div class="footBox">
+                <h3>Da Vinci University</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="courses.php">Courses</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="news.php">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="photos.php">Photos</a></li>
+                </ul>
+            </div>
+            <div class="footBox">
+                <h3>Open Day Registration</h3>
+            </div>
+        </div>
+    </footer>
+    <div class="footbar">
+        <div class="footWrap">
+            Da Vinci University
+            <span class="copy">&copy; 2018</span>
+        </div>
+    </div>
 </body>
 </html>

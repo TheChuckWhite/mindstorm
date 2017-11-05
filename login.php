@@ -1,5 +1,22 @@
 <?php
 session_start();
+session_destroy();
+session_start();
+$username = "admin";
+$password = "secret123";
+$failed = false;
+
+if(isset($_POST['logMeIn'])){
+
+    //credentials are entered
+    if($username == $_POST['username'] && $password == $_POST['password']){
+        $_SESSION["loggedIn"] = true;
+        header("Location: admin.php");
+        exit();
+    }
+
+    $failed = true;
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,26 +33,27 @@ session_start();
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-<header>
-    <div id="headWrap">
-        <div id="logo">
-            <img src="img/logo.png">
-            <div id="vinci">Da Vinci University</div>
-            <div id="learn">Learning never exhausts the mind</div>
+    <header>
+        <div class="headWrap">
+            <a href="index.php"><div class="logo">
+                <img src="img/logo.png">
+                <div class="vinci">Da Vinci University</div>
+                <div class="learn">Learning never exhausts the mind</div>
+            </div></a>
+
         </div>
+    </header>
+
+    <div class="wrapper">
+        <article class="shorter">
+            <form action="login.php" method="POST">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="*****">
+
+                <input type="submit" name="logMeIn" value="Login">
+            </form>
+            <span id="text_wrong"><?php if($failed == true){echo "Login credentials wrong";} ?></span>
+        </article>
     </div>
-</header>
-
-<div class="wrapper">
-    <article class="shorter">
-        <form action="php/login.php" method="POST">
-            <input type="text" name="username" placeholder="username">
-            <input type="password" name="password" placeholder="*****">
-
-            <input type="submit" name="logMeIn" value="Login">
-        </form>
-        <span id="text_wrong"><?php if($_SESSION['stringText'] = "true"){echo "Login credentials wrong";} ?></span>
-    </article>
-</div>
 </body>
 </html>

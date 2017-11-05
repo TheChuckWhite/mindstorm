@@ -1,0 +1,65 @@
+header{
+    border-bottom: 4px solid #ff6600;;
+}
+header .headWrap p{
+    width: 100px;
+    float: right;
+    line-height: 60px;
+}
+
+article{
+    float: left;
+    padding-bottom: 0;
+}
+
+article div{
+    width: 441px;
+    height: 300px;
+    float: left;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 36px -8px rgba(0,0,0,0.4);
+}
+article div:nth-child(odd){
+    margin-right: 20px;
+}
+article div img{
+    width: 441px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
+}
+article div form{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+}
+article div form input[type='submit'] {
+    float: left;
+    width: 120px;
+    text-align: center;
+    line-height: 40px;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: #fff;
+    background: #2ecc71;
+    transition: 300ms;
+    box-shadow: 4px 4px 36px -8px rgba(0,0,0,1);
+    border: 1px solid #fff;
+}
+
+article div form input[type='submit']:nth-child(even){
+    background: #e74c3c;
+}
+article div form input[type='submit']:nth-child(even):hover{
+    background: #c0392b;
+}
+article div form input[type='submit']:hover{
+    cursor: pointer;
+    background: #27ae60;
+}
+
+

@@ -1,5 +1,5 @@
 header{
-    border-bottom: 4px solid #ff6600;;
+    border-bottom: 4px solid #ff6600;
 }
 article.shorter{
      min-height: 130px;
@@ -8,8 +8,6 @@ article form{
     width: 400px;
     height: 150px;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-
 }
 article form input{
     width: 100%;
@@ -41,8 +39,9 @@ article form input[type='submit']:hover{
 }
 
 span#text_wrong{
-    font-family: 'Roboto', sans-serif;
-    width: 400px;
+    width: 268px;
     display: block;
-    margin: 0 auto;
+    float: left;
+    margin-left: 260px;
+    margin-top: -30px;
 }

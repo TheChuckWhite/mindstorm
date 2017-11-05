@@ -1,6 +1,6 @@
 <?php
 define("IN_PAGE", true);
-$lang = "en";
+$lang = "it";
 $news = include"newsfeed/newsReader.php";
 
 include"php/weather.php";
@@ -41,13 +41,13 @@ include"php/weather.php";
     <div class="navWrap">
         <nav>
             <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="courses.php">Courses</a></li>
-                <li><a href="events.php">Events</a></li>
-                <li><a href="news.php">News</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li class="active"><a href="photos.php">Photos</a></li>
+                <li><a href="indexit.php">Home</a></li>
+                <li><a href="aboutit.php">Su di noi</a></li>
+                <li><a href="coursesit.php">Corsi</a></li>
+                <li><a href="eventsit.php">Eventi</a></li>
+                <li><a href="newsit.php">Novità</a></li>
+                <li><a href="contactit.php">Contatti</a></li>
+                <li class="active"><a href="photosit.php">Fotografie</a></li>
             </ul>
         </nav>
     </div>
@@ -86,7 +86,7 @@ include"php/weather.php";
                 <a href="newsfeed/newsReader.php?lang=<?= $lang ?>" target="_blank"><img src="img/rss.png" alt="rss"></a>
             </div>
             <div class="weather">
-                <h3>Weather in Emmen</h3>
+                <h3>Tempo in Emmen</h3>
                 <div class="weather_img"><img src="img/weather/<?=$weatherString?>.png" alt="<?=$weatherString?>"></div>
                 <div class="weather_info">
                     <h4><?= $today->text ?></h4>
@@ -119,13 +119,13 @@ include"php/weather.php";
             <div class="footBox">
                 <h3>Da Vinci University</h3>
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="courses.php">Courses</a></li>
-                    <li><a href="events.php">Events</a></li>
-                    <li><a href="news.php">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="photos.php">Photos</a></li>
+                    <li><a href="indexit.php">Home</a></li>
+                    <li><a href="aboutit.php">About</a></li>
+                    <li><a href="coursesit.php">Coursi</a></li>
+                    <li><a href="eventsit.php">Events</a></li>
+                    <li><a href="newsit.php">News</a></li>
+                    <li><a href="contactit.html">Contact</a></li>
+                    <li><a href="photosit.php">Fotografie</a></li>
                 </ul>
             </div>
             <div class="footBox">

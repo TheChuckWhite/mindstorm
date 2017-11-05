@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 body{
-	background: url(../img/background.jpg) no-repeat center center fixed;
+	background: url('../img/background.jpg') no-repeat center center fixed;
 	background-size: cover;
+	font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -14,36 +14,36 @@ header{
 	background: #FFF;
 }
 
-div#logo{
+div.logo{
 	width: 500px;
 	height:100%;
 	float:left;
 }
 
-#logo img{
+.logo img{
 	height: 100%;
 	float: left;
 	margin-right: 10px;
 }
 
-#vinci{
+.vinci{
 	font-family: 'Roboto Slab', serif;
 	font-size: 26px;
 	margin-top:7px;
 }
 
-#learn{
+.learn{
 	font-size: 19px;
 	font-family: 'Satisfy', cursive;
 	margin-top:7px;
 }
 
-div#flag{
+div.flag{
 	float: right;
 	margin-top:15px;
 }
 
-#flag img{
+.flag img{
 	width: 40px;
 }
 
@@ -56,19 +56,19 @@ h2{
 }
 
 
-div#headWrap{
+div.headWrap{
 	width: 1000px;
 	margin: 0 auto;
 	height: 100%;
 	padding: 5px 20px;
 }
 
-#flag{
+.flag{
 	height: 20px;
 	float: right;
 }
 
-div#navWrap{
+div.navWrap{
 	width: 100%;
 	height: 50px;
 	background: #F70;
@@ -93,7 +93,6 @@ nav > ul > li{
 	height: 100%;
 	line-height: 50px;
 	vertical-align: middle;
-	font-family: 'Roboto', sans-serif;
 	color: #FFF;
 	transition: 0.3s;
 }
@@ -110,17 +109,11 @@ nav > ul > li > a{
 	color: inherit;
 	text-decoration: none;
 }
-nav > ul > li#active{
+nav > ul > li.active{
 	background: #FFF;
 	color: #F70;
 }
 
-div#navImg{
-	width: 50px;
-	height: 50px;
-	float: left;
-	background: #ff0;
-}
 div.wrapper{
 	width: 1000px;
 	padding: 0px 20px;
@@ -130,7 +123,7 @@ div.wrapper{
 	overflow: auto;
 }
 
-div#content{
+div.content{
 	width: 665px;
 	float: left;
 }
@@ -156,7 +149,7 @@ aside > div > div{
 	float: left;
 }
 
-#social{
+.social{
 	overflow: auto;
 	padding: 20px 0px;
 }
@@ -164,9 +157,6 @@ aside > div > div{
 .socialimg{
 	height: 100%;
 }
-
-
-
 
 article{
 	width:100%;
@@ -178,7 +168,6 @@ article{
 /*STUFF KARIN ADDED FOR THE SIDEBAR*/
 aside{
 	height: auto;
-	font-family: 'Roboto', serif;;
 }
 aside div {
 	float: left;
@@ -235,7 +224,6 @@ aside div.weather div.weather_info p{
 
 article p{
 	line-height: 1.3em;
-	font-family: 'Roboto', sans-serif;
 	padding:10px 0px;
 }
 
@@ -245,7 +233,7 @@ footer{
 	background: #F70;
 }
 
-div#footbar{
+div.footbar{
 	width: 100%;
 	height: 20px;
 	background: #FFF;
@@ -262,16 +250,11 @@ div.footBox{
 	height: 100%;
 	padding: 20px;
 	float: left;
-
 	color: #FFF;
-	font-family: 'Roboto', sans-serif;
 }
 
-div#footbar{
-	font-family: 'Roboto', sans-serif;
-}
 
-span#copy{
+span.copy{
 	display: block;
 	float: right;
 }
@@ -301,13 +284,13 @@ div.indexbox{
 div#campusbox{
 	
 	float: left;
-	background: url(../img/campus.jpg) no-repeat center center;
+	background: url('../img/campus.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 div#coursebox{
 	float: right;
-	background: url(../img/courses.jpg) no-repeat center center;
+	background: url('../img/courses.jpg') no-repeat center center;
 	background-size: cover;
 }
 

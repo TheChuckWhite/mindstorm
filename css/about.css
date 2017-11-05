@@ -17,7 +17,7 @@
 	top:1px;
 }
 
-#content input[type=button]{
+.content input[type=button]{
     border: 0;
     background: rgba(255,0,0,0);
     color: black;
