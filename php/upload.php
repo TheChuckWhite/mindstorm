@@ -16,7 +16,7 @@ $check = @getimagesize($_FILES["image"]["tmp_name"]);
 if($check == false) {
     die('Please upload a valid image');
 }
-if ($_FILES["image"]["size"] > 1000000) {
+if ($_FILES["image"]["size"] > 10000000) {
     die('Image size is too large');
 }
 if (!move_uploaded_file($_FILES["image"]["tmp_name"], $fileName)) {
