@@ -11,6 +11,8 @@ $extension = pathinfo($uploaded_file,PATHINFO_EXTENSION);
 $fileName = $target_dir . time() . '.' .  $extension;
 
 $check = @getimagesize($_FILES["image"]["tmp_name"]);
+
+
 if($check == false) {
     die('Please upload a valid image');
 }
