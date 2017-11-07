@@ -55,8 +55,8 @@ include"php/weather.php";
         <div class="content">
             <article class="shorter">
                 <form action="php/upload.php" method="POST" enctype="multipart/form-data">
-                    <p>Upload your picture here</p>
-                    <p class="small">Your picture will first be checked before it is uploaded</p>
+                    <p>Carica la tua foto qui</p>
+                    <p class="small">La tua foto sarà controllata prima di essere caricata</p>
                     <input type="file" name="image">
                     <input type="submit" value="Upload Image" name="upload">
                 </form>
