@@ -42,8 +42,9 @@ if(isset($_POST['approve'])){
     <div class="wrapper">
         <article>
             <?php
-            foreach( array_diff(scandir('uploads/unapproved/'), array('..', '.')) as $image){
-                echo"
+            if(!empty(array_diff(scandir('uploads/unapproved/'), array('..', '.')))){
+                foreach( array_diff(scandir('uploads/unapproved/'), array('..', '.')) as $image){
+                    echo"
                 <div>
                     <img src='uploads/unapproved/".$image."' alt='".$image."'>
                     <form action='admin.php' method='POST'>
@@ -53,7 +54,12 @@ if(isset($_POST['approve'])){
                     </form>
                 </div>
                 ";
+                }
             }
+            else{
+                echo "No images to show";
+            }
+
             ?>
         </article>
     </div>
