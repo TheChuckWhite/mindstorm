@@ -1,7 +1,7 @@
 <?php
 define("IN_PAGE", true);
 $lang = "it";
-$news = include"newsfeed/newsReader.php";
+$news = include "newsfeed/newsReader.php";
 
 include"php/weather.php";
 ?>
@@ -14,10 +14,11 @@ include"php/weather.php";
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/news.css">
+
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
 </head>
 <body>
 	<header>
@@ -29,37 +30,48 @@ include"php/weather.php";
 			</div>
 
 			<div class="flag">
-				<a href="news.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
+				<a href="index.php"><img src="img/uk_flag.png" alt="brittish flag"></a>
 			</div>
 		</div>
 	</header>
 	<div class="navWrap">
 		<nav>
-			<ul>
+			<ul>	
 				<li><a href="indexit.php">Home</a></li>
 				<li><a href="aboutit.php">Su di noi</a></li>
 				<li><a href="coursesit.php">Corsi</a></li>
 				<li><a href="eventsit.php">Eventi</a></li>
-				<li class="active"><a href="newsit.php">Novità</a></li>
+				<li><a href="newsit.php">Novità</a></li>
 				<li><a href="contactit.php">Contatti</a></li>
                 <li><a href="photosit.php">Fotografie</a></li>
 			</ul>
 		</nav>
 	</div>
 	<div class="wrapper">
+		<div class="content">
+			<article>
+				<h2>Iscriviti al Open Day</h2>
 
-        <div class="content">
-            <?php foreach($news as $newsItem){ ?>
-                <article>
-                    <h2><?= $newsItem->title ?></h2>
-                    <span><?= $newsItem->date ?></span>
-                    <p>
-                        <?= $newsItem->description ?>
-                    </p>
-                </article>
-            <?php } ?>
-        </div>
+				<?php
+					if (isset($_POST['name']) && isset($_POST['mail']) && !empty($_POST['name']) && !empty($_POST['mail'])) {
+						$name = $_POST['name'];
+						$mail = $_POST['mail'];
 
+						if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+						 	echo "Successo! Lei è stato registrato per il prossimo giorno aperto.";
+						 } 
+						
+						else{
+							echo "Inserisci una e-mail valida e prova nuovamente in basso.";
+						}
+					}
+
+					else{
+						echo "Inserisci nome e posta elettronica e prova nuovamente in basso.";
+					}
+				?>
+			</article>
+		</div>
 		<aside>
             <div>
                 <?php foreach($news as $newsItem){ ?>
@@ -105,13 +117,13 @@ include"php/weather.php";
 			</div>
 			<div class="footBox">
 				<h3>Da Vinci University</h3>
-				<ul>
+				<ul>	
 					<li><a href="indexit.php">Home</a></li>
-					<li><a href="aboutit.php">About</a></li>
-					<li><a href="coursesit.php">Courses</a></li>
-					<li><a href="eventsit.php">Events</a></li>
-					<li><a href="newsit.php">News</a></li>
-					<li><a href="contactit.html">Contact</a></li>
+					<li><a href="aboutit.php">Su di noi</a></li>
+					<li><a href="coursesit.php">Corsi</a></li>
+					<li><a href="eventsit.php">Eventi</a></li>
+					<li><a href="newsit.php">Novità</a></li>
+					<li><a href="contactit.html">Contatti</a></li>
                     <li><a href="photosit.php">Fotografie</a></li>
 				</ul>
 			</div>

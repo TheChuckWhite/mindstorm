@@ -31,7 +31,7 @@ include"php/weather.php";
             </div>
 
             <div class="flag">
-                <a href="indexit.php"><img src="img/it_flag.png" alt="italian flag"></a>
+                <a href="photos.php"><img src="img/it_flag.png" alt="italian flag"></a>
             </div>
             <div id="login">
                 <a href="login.php">Login</a>
@@ -58,7 +58,7 @@ include"php/weather.php";
                     <p>Carica la tua foto qui</p>
                     <p class="small">La tua foto sarà controllata prima di essere caricata</p>
                     <input type="file" name="image">
-                    <input type="submit" value="Upload Image" name="upload">
+                    <input type="submit" value="Carica" name="upload">
                 </form>
             </article>
             <article>
@@ -109,7 +109,7 @@ include"php/weather.php";
     <footer>
         <div class="footWrap">
             <div class="footBox">
-                <h3>Locations</h3>
+                <h3>Dove siamo</h3>
                 <ul>
                     <li>Emmen</li>
                     <li>Groningen</li>
@@ -129,7 +129,12 @@ include"php/weather.php";
                 </ul>
             </div>
             <div class="footBox">
-                <h3>Open Day Registration</h3>
+                <h3>Iscriviti al Open Day</h3>
+                <form id="openDay" action="opendayit.php" method="post">
+                    <input type="text" name="name" placeholder="Nome">
+                    <input type="text" name="mail" placeholder="E-Mail">
+                    <input id="openDaySubmit" type="submit" name="submit" value="Sottoscrivi">
+                </form>
             </div>
         </div>
     </footer>

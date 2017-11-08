@@ -131,7 +131,12 @@ include"php/weather.php";
 				</ul>
 			</div>
 			<div class="footBox">
-				<h3>Registrati al Open Day</h3>
+				<h3>Iscriviti al Open Day</h3>
+				<form id="openDay" action="opendayit.php" method="post">
+					<input type="text" name="name" placeholder="Nome">
+					<input type="text" name="mail" placeholder="E-Mail">
+					<input id="openDaySubmit" type="submit" name="submit" value="Sottoscrivi">
+				</form>
 			</div>
 		</div>
 	</footer>

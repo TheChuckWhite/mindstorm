@@ -37,7 +37,7 @@ include"php/weather.php";
 	<div class="navWrap">
 		<nav>
 			<ul>	
-				<li class="active"><a href="index.php">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="about.php">About</a></li>
 				<li><a href="courses.php">Courses</a></li>
 				<li><a href="events.php">Events</a></li>
@@ -50,39 +50,26 @@ include"php/weather.php";
 	<div class="wrapper">
 		<div class="content">
 			<article>
-				<h2>Study international at<br>Da Vinci University</h2>
-				<p>
-					Da Vinci University offers you an international studying environment to complete your studies with students from over 50 different countries all over the world. Every year dozens of students complete their bachelor's or master's program in one of our international courses. 
-				</p>
-				<p>
-					Your diploma in Technical Engineering, Information Technology, Electronic Music or Building Classical Instruments will be acknowledged worldwide and you have good chances starting your career in a multinational company.
-				</p>
-			</article>
-			<article class="dualbox">
-				<div class="indexbox" id="campusbox">
-					<a href="about.php">
-						<div class="overlay">
-							<p>Da Vinci<br>University</p>
-						</div>
-					</a>
-				</div>
-				<div class="indexbox" id="coursebox">
-					<a href="courses.php">
-						<div class="overlay">
-							<p>Courses</p>
-						</div>
-					</a>
-				</div>			
-			</article>
-			<article>
-				<h2>More than just a Number</h2>
-				<p>
-				At Da Vinci University students works in close surroundings to their lecturers and are treated equal and with respect. Each day there is a specified time where students can consult their lecturers with study related and personal matters.
-				</p>
+				<h2>Open day registration</h2>
 
-				<p>
-				Every period students also have to complete a project in a small working group. This does not only only improve the learning success, but also the social skills and leads to a social learning environment through your studies. 
-				</p>
+				<?php
+					if (isset($_POST['name']) && isset($_POST['mail']) && !empty($_POST['name']) && !empty($_POST['mail'])) {
+						$name = $_POST['name'];
+						$mail = $_POST['mail'];
+
+						if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+						 	echo "Success! You have registered for the next open day.";
+						 } 
+						
+						else{
+							echo "Please enter a valid E-Mail and try again down below.";
+						}
+					}
+
+					else{
+						echo "Please fill in name and E-Mail and try again down below.";
+					}
+				?>
 			</article>
 		</div>
 		<aside>

@@ -55,36 +55,37 @@ include"php/weather.php";
 		<div class="content">
 			<article>
 				<h2>Orari di aperutra</h2>
-				<div class="contents">	
-					<div id="days">
-						<ul>
-							<li>Lunedì</li>
-							<li>Martedì</li>
-							<li>Mercoledì</li>
-							<li>Giovedì</li>
-							<li>Venerdì</li>
-						</ul>
-					</div>
-					<div id="hours">
-						<ul>
-							<li>8:00 - 18:30 </li>
-							<li>8:00 - 18:30 </li>
-							<li>8:00 - 18:30 </li>
-							<li>8:00 - 19:30 </li>
-							<li>8:00 - 16:30 </li>
-						</ul>
-					</div>
-				</div>
+				
+				<table>
+					<tr>
+						<td>Lunedì</td>
+						<td>8:00 - 18:30</td>
+					</tr>
+					<tr>
+						<td>Martedì</td>
+						<td>8:00 - 18:30</td>
+					</tr>
+					<tr>
+						<td>Mercoledì</td>
+						<td>8:00 - 18:30</td>
+					</tr>
+					<tr>
+						<td>Giovedì</td>
+						<td>8:00 - 19:30</td>
+					</tr>
+					<tr>
+						<td>Venerdì</td>
+						<td>8:00 - 16:30</td>
+					</tr>
+				</table>
 				<p>
 					Durante i fine-settimana e le vancanze nazionali la Da Vinci University resterà chiusa.
 				</p>
-				<p>
+				
 				<h2> Contatti </h2>
-			
-					<ul>
-						<li>Numero di telefono: +31 (0)88 019 3789 </li>
-						<li>Indirizo e-mail: internationaloffice@davinciuniversity.nl </li>
-					</ul>
+				<p>
+					Numero di telefono: +31 (0)88 019 3789
+					Indirizo e-mail: internationaloffice@davinciuniversity.nl
 				</p>
 			</article>
 			<article>
@@ -92,7 +93,6 @@ include"php/weather.php";
 				<p>
 					Rispondiamo al maggior numero di domande possibili sul nostro sito. Sa hai delle domande che pensi non possano essere risposte sul sito, sei libero di contattarci! Puoi mandarci le tue domande alla mail di internationaloffice@davinciuniversity.nl o compilando il modulo qui sotto.
 				</p>
-				<div class="form">
                             <?php
                             if (isset($_POST['submit']))
                             {
@@ -106,34 +106,29 @@ include"php/weather.php";
                                 }
                             }
                             ?>
-                            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
-                                <p>
-                                    <label>Nome</label>
-                                    <textarea placeholder="Nome" name="text"></textarea>
-                                </p>
-                                <p>
-                                    <label>E-mail</label>
-                                    <textarea placeholder="E-mail" name="text"></textarea>
-                                </p>
-                                <p>
-                                    <label>Domande</label>
-                                    <textarea placeholder="Domande" name="text" id="comment"></textarea>
-                                </p>
-                                <p>
-                                    <input type="submit" value="Submit" name="submit"> 
-                                </p>
-                            </form> 
 
-                        </div>
+                            <form action="contact.php" method="POST">
+		                        <p>
+		                            <label>Nome</label>
+		                            <input type="text" name="name">
+		                        </p>
+		                        <p>
+		                            <label>E-mail</label>
+		                            <input type="text" name="email">
+		                        </p>
+		                        <p>
+		                            <label>Domande</label>
+		                            <textarea name="text" id="comment"></textarea>
+		                        </p>
+		                        <p>
+		                            <input id="submit" type="submit" value="Submit" name="submit"> 
+		                        </p>
+		                    </form> 
 			</article>
 			<article>
-
 				<h2>Dove puoi trovarci?</h2>
-				<p>	
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77226.35012579599!2d6.835303946248105!3d52.78047556573554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7e622998cc89d%3A0xbf2c3709eb35b55b!2sEmmen!5e0!3m2!1sro!2snl!4v1508491031723" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</p>
-				
 
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77226.35012579599!2d6.835303946248105!3d52.78047556573554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7e622998cc89d%3A0xbf2c3709eb35b55b!2sEmmen!5e0!3m2!1sro!2snl!4v1508491031723" width="625" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</article>
 			</div>
 		<aside>
@@ -172,7 +167,7 @@ include"php/weather.php";
     <footer>
         <div class="footWrap">
             <div class="footBox">
-                <h3>Locations</h3>
+                <h3>Dove siamo</h3>
                 <ul>
                     <li>Emmen</li>
                     <li>Groningen</li>
@@ -191,7 +186,12 @@ include"php/weather.php";
                 </ul>
             </div>
             <div class="footBox">
-                <h3>Open Day Registration</h3>
+                <h3>Iscriviti al Open Day</h3>
+				<form id="openDay" action="opendayit.php" method="post">
+					<input type="text" name="name" placeholder="Nome">
+					<input type="text" name="mail" placeholder="E-Mail">
+					<input id="openDaySubmit" type="submit" name="submit" value="Sottoscrivi">
+				</form>
             </div>
         </div>
     </footer>

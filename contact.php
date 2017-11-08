@@ -27,7 +27,7 @@ include"php/weather.php";
 	<header>
 		<div class="headWrap">
 			<div class="logo">
-				<img src="img/logo.png">
+				<img src="img/logo.png" alt="logo">
 				<div class="vinci">Da Vinci University</div>
 				<div class="learn">Learning never exhausts the mind</div>
 			</div>
@@ -57,85 +57,77 @@ include"php/weather.php";
 
 			<article>
 				<h2>Opening hours</h2>
-				<div class="contents">	
-					<div id="days">
-							<ul>
-								<li>Monday</li>
-								<li>Tuesday</li>
-								<li>Wednesday</li>
-								<li>Thursday</li>
-								<li>Friday</li>
-							</ul>
-					</div>
-					<div id="hours">
-						<ul>
-							<li>8:00 - 18:30 </li>
-							<li>8:00 - 18:30 </li>
-							<li>8:00 - 18:30 </li>
-							<li>8:00 - 19:30 </li>
-							<li>8:00 - 16:30 </li>
-						</ul>
-					</div>
-				</div>
+
+				<table>
+					<tr>
+						<td>Monday</td>
+						<td>8:00 - 18:30</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td>8:00 - 18:30</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td>8:00 - 18:30</td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td>8:00 - 19:30</td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td>8:00 - 16:30</td>
+					</tr>
+				</table>
 				<p>
 					During weekends and public holidays Da Vinci University is closed.
 				</p>
-				<p>
 				<h2> Contact details </h2>
-			
-					<ul>
-						<li>Telephone number: +31 (0)88 019 3789 </li>
-						<li>E-mail address: internationaloffice@davinciuniversity.nl </li>
-					</ul>
+				<p>
+						Telephone number: +31 (0)88 019 3789 <br>
+						E-mail address: internationaloffice@davinciuniversity.nl
 				</p>
 			</article>
 			<article>
 				<h2>Have any questions?</h2>
 				<p>We answer as many questions as we can on our website. If you have any questions that you feel are not answered on our website, feel free to contact us! You can send us your questions by sending an e-mail to internationaloffice@davinciuniversity.nl or by completing the form below.
 				</p>
-				<div class="form">
-                            <?php
-
-                            if (isset($_POST['submit']))
+                    <?php
+                        if (isset($_POST['submit']))
+                        {
+                            $text = $_POST['text'];
+                            if (!empty($text))
                             {
-                                $text = $_POST['text'];
-                                if (!empty($text))
-                                {
-                                    echo '<font color="red"><font size="20">*Thank you for the interest in our university! We will try to answer them as soon as possible!</font>';
-                                } else
-                                {
-                                    echo '<font color="red">*Complete all the empty fields!</font>';
-                                }
+                                echo '<font color="red">*Thank you for the interest in our university! We will try to answer them as soon as possible!</font>';
+                            } else
+                            {
+                                echo '<font color="red">*Complete all the empty fields!</font>';
                             }
-                            ?>
-                            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
-                                <p>
-                                    <label>Name</label>
-                                    <textarea placeholder="Name" name="text"></textarea>
-                                </p>
-                                <p>
-                                    <label>E-mail</label>
-                                    <textarea placeholder="E-mail" name="text"></textarea>
-                                </p>
-                                <p>
-                                    <label>Questions</label>
-                                    <textarea placeholder="Questions" name="text" id="comment"></textarea>
-                                </p>
-                                <p>
-                                    <input type="submit" value="Submit" name="submit"> 
-                                </p>
-                            </form> 
-
-                        </div>
+                        }
+                    ?>
+                    <form action="contact.php" method="POST">
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name">
+                        </p>
+                        <p>
+                            <label>E-mail</label>
+                            <input type="text" name="email">
+                        </p>
+                        <p>
+                            <label>Questions</label>
+                            <textarea name="text" id="comment"></textarea>
+                        </p>
+                        <p>
+                            <input id="submit" type="submit" value="Submit" name="submit"> 
+                        </p>
+                    </form> 
 			</article>
+
 			<article>
-
 				<h2>Where can you find us?</h2>
-				<p>	
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77226.35012579599!2d6.835303946248105!3d52.78047556573554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7e622998cc89d%3A0xbf2c3709eb35b55b!2sEmmen!5e0!3m2!1sro!2snl!4v1508491031723" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</p>
-				
-
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77226.35012579599!2d6.835303946248105!3d52.78047556573554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7e622998cc89d%3A0xbf2c3709eb35b55b!2sEmmen!5e0!3m2!1sro!2snl!4v1508491031723" width="625" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</article>
 		</div>
 		<aside>
@@ -194,6 +186,11 @@ include"php/weather.php";
             </div>
             <div class="footBox">
                 <h3>Open Day Registration</h3>
+                <form id="openDay" action="openday.php" method="post">
+					<input type="text" name="name" placeholder="Name">
+					<input type="text" name="mail" placeholder="E-Mail">
+					<input id="openDaySubmit" type="submit" name="submit" value="Submit">
+				</form>
             </div>
         </div>
     </footer>

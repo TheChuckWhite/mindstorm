@@ -31,7 +31,7 @@ include"php/weather.php";
             </div>
 
             <div class="flag">
-                <a href="indexit.php"><img src="img/it_flag.png" alt="italian flag"></a>
+                <a href="photosit.php"><img src="img/it_flag.png" alt="italian flag"></a>
             </div>
             <div id="login">
                 <a href="login.php">Login</a>
@@ -130,6 +130,11 @@ include"php/weather.php";
             </div>
             <div class="footBox">
                 <h3>Open Day Registration</h3>
+                <form id="openDay" action="openday.php" method="post">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="mail" placeholder="E-Mail">
+                    <input id="openDaySubmit" type="submit" name="submit" value="Submit">
+                </form>
             </div>
         </div>
     </footer>
