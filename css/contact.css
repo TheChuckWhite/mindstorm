@@ -18,9 +18,18 @@ input{
 }
 
 #submit{
-	width: 120px;
+	width: 130px;
+	background-color: #F70;
+	color: #FFF;
+	padding:10px;
 	border: 1px solid #F70;
-	padding: 5px;
+	transition: 0.3s;
+}
+
+#submit:hover{
+	background-color: #FFF;
+	color: #F70;
+	cursor:pointer;
 }
 
 td{

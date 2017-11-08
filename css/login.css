@@ -32,7 +32,7 @@ article form input[type='submit']{
     transition: 400ms;
 }
 article form input[type='submit']:hover{
-    transition: 400ms;
+    transition: 300ms;
     box-shadow: inset 100px 0 0 0 #ff6600;
     color: #fff;
     cursor: pointer;
