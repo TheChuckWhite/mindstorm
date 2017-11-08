@@ -19,7 +19,7 @@ if(isset($_POST['logMeIn'])){
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
 
@@ -36,7 +36,7 @@ if(isset($_POST['logMeIn'])){
     <header>
         <div class="headWrap">
             <a href="index.php"><div class="logo">
-                <img src="img/logo.png">
+                <img src="img/logo.png" alt="logo">
                 <div class="vinci">Da Vinci University</div>
                 <div class="learn">Learning never exhausts the mind</div>
             </div></a>

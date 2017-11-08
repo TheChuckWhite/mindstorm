@@ -6,7 +6,7 @@ $news = include "newsfeed/newsReader.php";
 include"php/weather.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
 	<meta charset="utf-8">
 
@@ -25,7 +25,7 @@ include"php/weather.php";
 	<header>
 		<div class="headWrap">
 			<div class="logo">
-				<img src="img/logo.png">
+				<img src="img/logo.png" alt="logo">
 				<div class="vinci">Da Vinci University</div>
 				<div class="learn">Learning never exhausts the mind</div>
 			</div>
@@ -80,7 +80,7 @@ include"php/weather.php";
 					La nostra univerità fornisce una varietà di corse tra cui scegliere. Per i più tecnici abbiamo il corso di Ingegneria Elettronica. Per quelli ansiosi di sapere tutto abbiamo Ingegneria Informatica. Per i romantici creatori abbiamo un corso di Costruzione di Strumenti Classici. E, ovviamete, possiamo accomodare i più vivaci e tecno-friendly studenti con il nostro corso di Musica Elettronica.
 				</p>
 				<div id="courseButtonDiv">
-					<a href="coursesit.php"><input id="coursesBtn" type="button" name="coursesBtn" value="Corsi"></a>
+					<a href="coursesit.php" id="coursesBtn">Corsi</a>
 				</div>
 			</article>
 
@@ -149,10 +149,10 @@ include"php/weather.php";
 			</div>
 			<div class="footBox">
 				<h3>Iscriviti al Open Day</h3>
-				<form id="openDay" action="opendayit.php" method="post">
+				<form class="openDay" action="opendayit.php" method="post">
 					<input type="text" name="name" placeholder="Nome">
 					<input type="text" name="mail" placeholder="E-Mail">
-					<input id="openDaySubmit" type="submit" name="submit" value="Sottoscrivi">
+					<input class="openDaySubmit" type="submit" name="submit" value="Sottoscrivi">
 				</form>
 			</div>
 		</div>

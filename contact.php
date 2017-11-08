@@ -6,7 +6,7 @@ $news = include"newsfeed/newsReader.php";
 include"php/weather.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 
@@ -127,7 +127,7 @@ include"php/weather.php";
 
 			<article>
 				<h2>Where can you find us?</h2>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77226.35012579599!2d6.835303946248105!3d52.78047556573554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7e622998cc89d%3A0xbf2c3709eb35b55b!2sEmmen!5e0!3m2!1sro!2snl!4v1508491031723" width="625" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77226.35012579599!2d6.835303946248105!3d52.78047556573554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7e622998cc89d%3A0xbf2c3709eb35b55b!2sEmmen!5e0!3m2!1sro!2snl!4v1508491031723" allowfullscreen></iframe>
 			</article>
 		</div>
 		<aside>
@@ -186,10 +186,10 @@ include"php/weather.php";
             </div>
             <div class="footBox">
                 <h3>Open Day Registration</h3>
-                <form id="openDay" action="openday.php" method="post">
+                <form class="openDay" action="openday.php" method="post">
 					<input type="text" name="name" placeholder="Name">
 					<input type="text" name="mail" placeholder="E-Mail">
-					<input id="openDaySubmit" type="submit" name="submit" value="Submit">
+					<input class="openDaySubmit" type="submit" name="submit" value="Submit">
 				</form>
             </div>
         </div>

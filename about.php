@@ -6,7 +6,7 @@ $news = include"newsfeed/newsReader.php";
 include"php/weather.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 
@@ -25,7 +25,7 @@ include"php/weather.php";
 	<header>
 		<div class="headWrap">
 			<div class="logo">
-				<img src="img/logo.png">
+				<img src="img/logo.png" alt="logo">
 				<div class="vinci">Da Vinci University</div>
 				<div class="learn">Learning never exhausts the mind</div>
 			</div>
@@ -81,7 +81,7 @@ include"php/weather.php";
 				</p>
 
 				<div id="courseButtonDiv">
-					<a href="coursesit.php"><input id="coursesBtn" type="button" name="coursesBtn" value="Courses"></a>
+                    <a href="courses.php" id="coursesBtn">Courses</a>
 				</div>
 						
 			</article>
@@ -151,10 +151,10 @@ include"php/weather.php";
 			</div>
 			<div class="footBox">
 				<h3>Open Day Registration</h3>
-				<form id="openDay" action="openday.php" method="post">
+				<form class="openDay" action="openday.php" method="post">
 					<input type="text" name="name" placeholder="Name">
 					<input type="text" name="mail" placeholder="E-Mail">
-					<input id="openDaySubmit" type="submit" name="submit" value="Submit">
+					<input class="openDaySubmit" type="submit" name="submit" value="Submit">
 				</form>
 			</div>
 		</div>
