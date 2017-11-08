@@ -1,25 +1,20 @@
 #coursesBtn {
-	font-family: 'Roboto Slab', serif;
 	float: right;
-	background-color:orange;
-	-moz-border-radius:5px;
-	border-radius:5px;
-	cursor:pointer;
-	padding:5px 10px;
+	background-color: #F70;
+	color: #FFF;
+	padding:10px;
+	border: 1px solid #F70;
+	transition: 0.3s;
+}
+
+#courseButtonDiv{
+	overflow: auto;
+	
 }
 
 #coursesBtn:hover {
-	background-color: darkorange;
+	background-color: #FFF;
+	color: #F70;
+	cursor:pointer;
 }
 
-#coursesBtn:active {
-	position:relative;
-	top:1px;
-}
-
-.content input[type=button]{
-    border: 0;
-    background: rgba(255,0,0,0);
-    color: black;
-    cursor: pointer;
-}

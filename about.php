@@ -78,7 +78,12 @@ include"php/weather.php";
 				<h2>Courses Available</h2>
 				<p>
 					Our university provides a variety of courses to choose from. For the most technical ones we have Electrical Engineering course. For those eager to know how to find everything we have Information Technology. For the romantic creators we have a course of Building Classical Instruments. And, of course, we can accommodate the most lively and technology-friendly students with our Electronic Music course.
-					<p id="coursesBtn"><a href="courses.php"><input type="button" name="coursesBtn" value="Courses"></a></p>			
+				</p>
+
+				<div id="courseButtonDiv">
+					<a href="coursesit.php"><input id="coursesBtn" type="button" name="coursesBtn" value="Courses"></a>
+				</div>
+						
 			</article>
 			
 			<article>
