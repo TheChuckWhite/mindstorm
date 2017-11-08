@@ -325,46 +325,39 @@ a:visited{
 	color: inherit;
 }
 
-#openDay > input[type='text']{
+.openDay input{
 	width: 100%;
 	border: 1px solid #FFF;
 	padding: 5px;
 	margin: 5px 0px;
-	background-color: #FFF;
-	color: #F70;
-	transition: background-color 0.3s;
-}
-#openDay > input[type='text']:focus{
 	background-color: #F70;
 	color: #FFF;
 }
 
-#openDay >::-webkit-input-placeholder { /* Chrome */
-  color: #F70;
+.openDay >::-webkit-input-placeholder { /* Chrome */
+  color: #FFF;
   opacity: 0.6;
 }
-#openDay >:-ms-input-placeholder { /* IE 10+ */
-  color: #F70;
+.openDay >:-ms-input-placeholder { /* IE 10+ */
+  color: #FFF;
   opacity: 0.6;
 }
-#openDay >::-moz-placeholder { /* Firefox 19+ */
-  color: #F70;
+.openDay >::-moz-placeholder { /* Firefox 19+ */
+  color: #FFF;
   opacity: 0.6;
 }
-#openDay >:-moz-placeholder { /* Firefox 4 - 18 */
-  color: #F70;
+.openDay >:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #FFF;
   opacity: 0.6;
 }
 
-input[type='submit']{
+.openDay .openDaySubmit{
 	width: 100px;
 	float: right;
-	height: 30px;
-	margin-top: 10px;
 	transition: 0.3s;
 }
 
-input[type='submit']:hover{
+ .openDaySubmit:hover{
 	background-color: #FFF;
 	color: #F70;
 	cursor: pointer;
