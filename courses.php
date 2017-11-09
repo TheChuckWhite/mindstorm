@@ -12,6 +12,8 @@ include"php/weather.php";
 
 	<title>Da Vinci University</title>
 
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/courses.css">
 
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />

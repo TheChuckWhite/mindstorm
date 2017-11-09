@@ -1,5 +1,4 @@
-@import url('./reset.css');
-@import url('./main.css');
+
 
 b{
 	font-weight: bold;
@@ -49,6 +48,7 @@ div.overlayNoTransition p{
 
 #electronicMusic{
 	background-image: url(../img/electronicMusic.gif);
+
 }
 
 #classicalInstruments{
@@ -61,6 +61,7 @@ div.overlayNoTransition p{
 
 #generalRequirements{
 	background-image: url(../img/generalRequirements.gif);
+		background-position: bottom;
 }
 
 #electricalEngineering{
